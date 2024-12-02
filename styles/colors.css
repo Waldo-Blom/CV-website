@@ -1,0 +1,41 @@
+:root{
+    --background: 240 10% 3.9%;
+    --foreground: rgba(255, 255, 255, 0.1);
+
+    --text-50: #eeeff7;
+    --text-950: #080911;
+    
+    --background-50: #edeef8;
+    --background-100: #dbddf0;
+    --background-200: #b7bae1;
+    --background-300: #9298d3;
+    --background-400: #6e75c4;
+    --background-500: #4a53b5;
+    --background-600: #3b4291;
+    --background-700: #2c326d;
+
+    
+    --primary-50: #ebedf9;
+    --primary-100: #d8dbf3;
+    --primary-200: #b0b7e8;
+    --primary-300: #8993dc;
+    --primary-400: #626fd0;
+    --primary-500: #3b4bc4;
+   
+    
+    --secondary-50: #eaecfa;
+    --secondary-100: #d5d9f6;
+    --secondary-200: #acb3ec;
+    --secondary-300: #828ee3;
+    --secondary-400: #5968d9;
+    --secondary-500: #2f42d0;
+  
+    
+    --accent-50: #e9ebfc;
+    --accent-100: #d3d7f8;
+    --accent-200: #a7aff1;
+    --accent-300: #7b88ea;
+    --accent-400: #4f60e3;
+    --accent-500: #2238dd;
+
+    }

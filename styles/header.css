@@ -1,0 +1,61 @@
+
+
+#dark-ligt-mode{
+    display: flex;
+    justify-content: left;
+
+    background-color: var(--foreground);
+    color: var(--text-50);
+
+    border-radius: 100px;
+}
+
+#contact-div{
+    display: flex;
+    justify-content: right;
+
+ 
+    border-radius: 100px;
+
+}
+button{
+    border: 0;
+
+    border-radius: 100px;
+    padding: 0.5rem;
+
+    background-color: var(--foreground);
+    color: var(--text-50);
+}
+    
+#pagelinks {
+        display: flex; 
+        justify-content: center; 
+        gap: 1rem; 
+    
+        background-color: var(--foreground);
+        border-radius: 100px;
+    }
+    
+#pagelinks a {
+        padding: 1.2rem 2rem; 
+        margin: 0; 
+        
+        color: var(--text-50);
+
+        border-radius: 100px;
+        
+    }
+
+a {
+    display: flex;
+    align-items: center; 
+
+    text-decoration: none; 
+    color: var(--text-50);
+    }
+    
+    .hover-1 {
+       /*Change to hover animation*/
+       text-align: center;
+    }
