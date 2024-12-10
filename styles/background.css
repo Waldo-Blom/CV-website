@@ -1,0 +1,7 @@
+.background-pattern {
+    background-color: var(--background);
+    background-image: linear-gradient(whitesmoke 0.05rem, transparent 0.05rem),
+                      linear-gradient(90deg, whitesmoke 0.05rem, transparent 0.05rem);
+    background-size: 2rem 2rem; /* Adjust the size for denser lines */
+   
+}
