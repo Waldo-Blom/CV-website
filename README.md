@@ -8,6 +8,7 @@
  - [ ] On website first open animation
   - [ ] Dark / Light mode functionality
   - [ ] Contact me functionality
+  - [ ] Blocky background with click functionality
 
 ### Header
  - [ ] Nav hover
@@ -16,9 +17,3 @@
 ### Body
 - [ ] Create a basic design for the rest of the body layout
 
-## Grid Vs Flex
-Grid is better for a more rigid and well defined size, will be good for the project section
-
-Grid will also be better for overall layout
-
-For the nav bar flex will be better
