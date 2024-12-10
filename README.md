@@ -13,6 +13,7 @@
 ### Header
  - [ ] Nav hover
  - [ ] Dark / Light modeS
+ - [ ] Add buttons for linkedin and github at top right of nav bar
 
 ### Body
 - [ ] Create a basic design for the rest of the body layout
