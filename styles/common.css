@@ -1,13 +1,4 @@
 
-body{
-    background-color: hsl(var(--background)) ;
-}
-
-.mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
 /* General styles */
 body, html {
     margin: 0;
@@ -51,8 +42,6 @@ body, html {
     display: flex;
     gap: 1rem; 
     align-items: center;
-
-    
   }
   
   .header nav a, .header button {
@@ -67,29 +56,9 @@ body, html {
   }
   
   .header nav a:hover, .header button:hover {
-    background-color: #444;
+    background-color: var(--clr-accent-1);
   }
-  
-  /* Responsive Design for Smaller Screens */
-  @media (max-width: 768px) {
-    .header {
-      justify-content: space-between; 
-      padding: 1rem;
-    }
-  
-    .dark-light-toggle {
-      position: static;
-      transform: none;
-      margin-right: auto; 
-    }
-  
-    .header nav {
-      flex-grow: 1;
-      justify-content: center; 
-    }
-  }
-  
-  
+
   /* Main content styles */
 /* Main Section Styles */
 .main-section {
@@ -100,22 +69,10 @@ body, html {
     height: 100vh; /* Full viewport height */
     text-align: center;
     background: var(--background);
-    color: white;
+    color: var(--foreground);
     padding: 0 2rem; /* Padding for smaller screens */
   }
-  
-  /* Availability Status */
-  .availability {
-    display: flex;
-    align-items: center;
-    background: #000;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    color: #fff;
-    margin-bottom: 1rem;
-  }
-  
+
   /* Heading Styles */
   h1 {
     font-size: 3rem;
@@ -125,12 +82,12 @@ body, html {
   h2 {
     font-size: 2rem;
     margin: 0.5rem 0;
-    color: #ccc;
+    color: var(--foreground);
   }
   
   p {
     font-size: 1rem;
-    color: #bbb;
+    color: var(--foreground);
     max-width: 600px;
     line-height: 1.5;
     margin-bottom: 2rem;
@@ -151,30 +108,30 @@ body, html {
   }
   
   .download-btn {
-    background-color: white;
-    color: black;
+    background-color: var(--foreground);
+    color: var(--background);
     font-weight: bold;
   }
   
   .contact-btn {
     background-color: transparent;
     border: 1px solid white;
-    color: white;
+    color: var(--foreground);
   }
   
   .download-btn:hover {
-    background-color: #ddd;
+    background-color: var(--clr-accent-1);
   }
   
   .contact-btn:hover {
-    background-color: white;
-    color: black;
+    background-color: var(--clr-accent-1);
+    color: var(--foreground);
   }
   
   /* Footer styles */
   .footer {
     background-color: var(--background);
-    color: white;
+    color: var(--foreground);
     padding: 1rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -183,18 +140,13 @@ body, html {
   }
   
   .footer a {
-    color: white;
+    color: var(--foreground);
     text-decoration: none;
   }
   
   .footer a:hover {
-    color: #ff00ff;
+    color: var(--clr-accent-1);
   }
   
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .footer {
-      grid-template-columns: 1fr;
-    }
-  }
+
 
