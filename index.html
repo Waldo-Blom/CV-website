@@ -6,6 +6,7 @@
     <title>Waldo's Portfolio</title>
     <link rel="stylesheet" href="/styles/common.css">
     <link rel="stylesheet" href="/styles/background.css">
+    <link rel="stylesheet" href="/styles/dark-light.css">
 
 </head>
 <body>
@@ -17,13 +18,15 @@
                 <a href="#">Projects</a>
                 <a href="#">Download CV</a>
                
-                <button class="dark-light-toggle">Dark/Light</button>
+                <button id="dark-mode-toggle" class="dark-mode-toggle">
+                  <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg>
+                </button>
               </nav>
             </header>
             <main class="main-content">
                 <section class="main-section">
                     <h1>Waldo Blom</h1>
-                    <h2>Student at Belgium Campus ITversity</h2>
+                    <h2>Bachelor of Computing Student</h2>
                     <p>
                       This will be my discription
                     </p>
@@ -44,5 +47,6 @@
           </div>
     </div>
  
+    <script src="/JS/dark-light.js"></script>
 </body>
 </html>

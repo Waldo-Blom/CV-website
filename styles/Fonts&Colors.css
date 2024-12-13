@@ -1,0 +1,102 @@
+.light{
+    --background: 240 10% 98%; /* Light background */
+    --foreground: rgba(0, 0, 0, 0.1); /* Subtle dark overlay */
+
+    --text-50: #080911; /* Dark text */
+    --text-950: #eeeff7; /* Light background for contrast */
+
+    --background-50: #edeef8;
+    --background-100: #dbddf0;
+    --background-200: #b7bae1;
+    --background-300: #9298d3;
+    --background-400: #6e75c4;
+    --background-500: #4a53b5;
+    --background-600: #3b4291;
+    --background-700: #2c326d;
+
+    --primary-50: #ebedf9;
+    --primary-100: #d8dbf3;
+    --primary-200: #b0b7e8;
+    --primary-300: #8993dc;
+    --primary-400: #626fd0;
+    --primary-500: #3b4bc4;
+
+    --secondary-50: #eaecfa;
+    --secondary-100: #d5d9f6;
+    --secondary-200: #acb3ec;
+    --secondary-300: #828ee3;
+    --secondary-400: #5968d9;
+    --secondary-500: #2f42d0;
+
+    --accent-50: #e9ebfc;
+    --accent-100: #d3d7f8;
+    --accent-200: #a7aff1;
+    --accent-300: #7b88ea;
+    --accent-400: #4f60e3;
+    --accent-500: #2238dd;
+}
+
+.dark{
+    --background: 240 10% 3.9%; /* Dark background */
+    --foreground: rgba(255, 255, 255, 0.1); /* Subtle light overlay */
+
+    --text-50: #eeeff7; /* Light text */
+    --text-950: #080911; /* Dark for contrast elements */
+
+    --background-50: #2c326d; /* Darker tones for dark theme */
+    --background-100: #3b4291;
+    --background-200: #4a53b5;
+    --background-300: #6e75c4;
+    --background-400: #9298d3;
+    --background-500: #b7bae1;
+    --background-600: #dbddf0;
+    --background-700: #edeef8;
+
+    --primary-50: #3b4bc4;
+    --primary-100: #626fd0;
+    --primary-200: #8993dc;
+    --primary-300: #b0b7e8;
+    --primary-400: #d8dbf3;
+    --primary-500: #ebedf9;
+
+    --secondary-50: #2f42d0;
+    --secondary-100: #5968d9;
+    --secondary-200: #828ee3;
+    --secondary-300: #acb3ec;
+    --secondary-400: #d5d9f6;
+    --secondary-500: #eaecfa;
+
+    --accent-50: #2238dd;
+    --accent-100: #4f60e3;
+    --accent-200: #7b88ea;
+    --accent-300: #a7aff1;
+    --accent-400: #d3d7f8;
+    --accent-500: #e9ebfc;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Noto%20Sans%20Old%20Sogdian:700|Noto%20Sans%20Old%20Sogdian:400');
+
+body {
+    font-family: 'Noto Sans Old Sogdian';
+    font-weight: 400;
+    }
+    
+h1, h2, h3, h4, h5 {
+    font-family: 'Noto Sans Old Sogdian';
+    font-weight: 700;
+    }
+    
+html {font-size: 100%;} /* 16px */
+    
+h1 {font-size: 4.210rem; /* 67.36px */}
+    
+h2 {font-size: 3.158rem; /* 50.56px */}
+    
+h3 {font-size: 2.369rem; /* 37.92px */}
+    
+h4 {font-size: 1.777rem; /* 28.48px */}
+    
+h5 {font-size: 1.333rem; /* 21.28px */}
+    
+small {font-size: 0.750rem; /* 12px */}

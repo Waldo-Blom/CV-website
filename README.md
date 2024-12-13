@@ -17,4 +17,5 @@
 
 ### Body
 - [ ] Create a basic design for the rest of the body layout
+- [ ] Make a light fade in when the user hovers over my name or resume button
 
