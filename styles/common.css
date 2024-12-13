@@ -79,6 +79,7 @@ body, html {
   }
   
   h2 {
+
     margin: 0.5rem 0;
     color: var(--foreground);
   }

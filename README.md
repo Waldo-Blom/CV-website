@@ -6,13 +6,13 @@
 
 ### Animations
  - [ ] On website first open animation
-  - [ ] Dark / Light mode functionality
+  - [x] Dark / Light mode functionality
   - [ ] Contact me functionality
   - [ ] Blocky background with click functionality
 
 ### Header
- - [ ] Nav hover
- - [ ] Dark / Light modeS
+ - [x] Nav hover
+ - [x] Dark / Light modeS
  - [ ] Add buttons for linkedin and github at top right of nav bar
 
 ### Body
