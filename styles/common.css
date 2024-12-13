@@ -3,7 +3,6 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
   }
   
   /* Grid container */
@@ -76,18 +75,15 @@ body, html {
 
   /* Heading Styles */
   h1 {
-    font-size: 3rem;
     margin: 0.5rem 0;
   }
   
   h2 {
-    font-size: 2rem;
     margin: 0.5rem 0;
     color: var(--foreground);
   }
   
   p {
-    font-size: 1rem;
     color: var(--foreground);
     max-width: 600px;
     line-height: 1.5;
