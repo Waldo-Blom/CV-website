@@ -17,6 +17,7 @@
  - [ ] Other color options for nav?
  - [ ] Neon hover effect for hover
  - [ ] Active color effect 
+ - [ ] Dark light icons change
 
 ### My tech Stack
 - [ ] Make images more the same size
