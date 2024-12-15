@@ -160,54 +160,60 @@ body, html {
   
   .technologies-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust cards to fit space */
-    gap: 1.5rem; /* Space between cards */
-    padding: 1rem; /* Optional padding for the grid */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem; 
+    padding: 2rem; 
   }
   
   .tech-card {
     background-color: #1a1a1a;
     border-radius: 10px;
     padding: 1rem;
-    text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex; 
+    align-items: center; 
+    gap: 1rem; 
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.tech-card > div {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .tech-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  }
+    align-items: flex-start;
+}
   
   .tech-card img {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 0.5rem;
+    width: 50px; 
+    height: 50px;
   }
   
   .tech-card h3 {
-    margin: 0.5rem 0;
+    margin: 0;
     font-size: 1.25rem;
+    color: #fff;
   }
   
   .tech-card p {
+    margin: 0;
     font-size: 0.875rem;
     color: #ccc;
   }
   
-
+  .tech-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px 4px rgba(58, 227, 116, 0.8),
+                0 0 40px 8px rgba(58, 227, 116, 0.5),
+                0 0 60px 12px rgba(58, 227, 116, 0.3);
+  }
+  
   .content {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem; /* Use gap for consistent spacing between sections */
+    gap: 0.5rem;
   }
   
   .main-section, .technologies-section {
-    margin: 0; /* Remove top margins */
+    margin: 0; 
   }
   
   /* Footer styles */
