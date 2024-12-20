@@ -3,6 +3,7 @@
 ## What to do
 ### Other
 - [ ] Make the website mobile friendly
+- [ ] Fix spacing between sections
 
 ### Animations
  - [ ] On website first open animation
@@ -25,8 +26,11 @@
 - [ ] When resizing some display weird, look for fix
 
 ### Education section
-- [ ] Make more size adjustable friendly
-- [ ] Add line sperating two (Look at website inspo)
+- [x] Make more size adjustable friendly
+- [ ] Remove icons on resize
+- [ ] Add icons 
+- [ ] Fix arrow alignment
+- [x] Add line sperating two (Look at website inspo)
 - [ ] Make changes to the discriptions of each
 - [ ] Color and text size changes
 
@@ -36,5 +40,6 @@
 
 ### Footer
 - [ ] Create footer with github and linkin logo and links??
+
 ### Contact me form ???
 

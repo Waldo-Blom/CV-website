@@ -246,7 +246,7 @@ body, html {
 .timeline {
   position: relative;
   margin: 50px auto;
-  width: 70%; /* Adjusted width to create space on the sides */
+  width: 70%; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -268,18 +268,18 @@ body, html {
 .timeline-item {
   position: relative;
   margin-bottom: 50px;
-  width: 100%; /* Content will align based on flex properties */
+  width: 100%; 
   display: flex;
   align-items: center;
 }
 
 .timeline-item.left {
-  justify-content: flex-end; /* Align content to the left */
+  justify-content: flex-end; 
   text-align: right;
 }
 
 .timeline-item.right {
-  justify-content: flex-start; /* Align content to the right */
+  justify-content: flex-start; 
   text-align: left;
 }
 
@@ -289,7 +289,7 @@ body, html {
   color: #ffffff;
   padding: 20px;
   border-radius: 8px;
-  width: 40%; /* Ensure consistent width */
+  width: 40%; 
   box-shadow: 0 4px 10px var(--foreground);
   position: relative;
   z-index: 2;
@@ -364,7 +364,7 @@ body, html {
   }
 
   .timeline-item {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column; 
     align-items: center;
   }
 
