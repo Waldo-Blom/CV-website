@@ -260,7 +260,7 @@ body, html {
   top: 0;
   bottom: 0;
   width: 2px;
-  background-color: #cccccc;
+  background-color: var(--foreground);
   z-index: 1;
 }
 
@@ -286,7 +286,7 @@ body, html {
 /* Content Box */
 .timeline-content {
   background-color: var(--background);
-  color: #ffffff;
+  color: var(--foreground);
   padding: 20px;
   border-radius: 8px;
   width: 40%; 
@@ -303,7 +303,7 @@ body, html {
 .timeline-content h4 {
   margin: 0 0 15px;
   font-size: 1.2rem;
-  color: #aaaaaa;
+  color: var(--foreground);
 }
 
 .timeline-content p {
@@ -343,9 +343,9 @@ body, html {
   transform: translate(-50%, -50%);
   width: 50px;
   height: 50px;
-  background-color: #ffffff;
+  background-color: var(--background);
   border-radius: 50%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px var(--foreground);
   z-index: 3;
   display: flex;
   justify-content: center;
