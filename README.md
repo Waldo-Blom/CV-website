@@ -33,6 +33,7 @@
 - [x] Add line sperating two (Look at website inspo)
 - [ ] Make changes to the discriptions of each
 - [ ] Color and text size changes
+- [ ] Dotted background (see watch later vid on yt) OR https://www.magicpattern.design/tools/polka-dot-pattern-generator
 
 ### My Projects
 - [ ] Create a clickable link at the bottom to go to projects section
