@@ -1,6 +1,13 @@
 # CV-website
 
 ## What to do
+## This weeks to do list
+- [ ] Create text based CV
+- [ ] Change the nav bar
+- [ ] Create footer
+- [ ] Fix the spacing issues between sections
+- [ ] Optimize code and remove redudant code
+
 ### Other
 - [ ] Make the website mobile friendly
 - [ ] Fix spacing between sections
