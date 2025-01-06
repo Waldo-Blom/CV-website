@@ -27,13 +27,22 @@ body, html {
   backdrop-filter: blur(10px);
 }
 
+header {
+  position: sticky;
+  top: 1.5rem;
+  width: 100%;
+  z-index: 1000;
+}
+
 /* Navbar Styles */
 .navbar {
   display: flex;
-  justify-content: center; /* Changed from space-between to center */
+  justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem 2rem;
   height: 60px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Center Navigation Menu */
@@ -86,7 +95,6 @@ body, html {
 }
 
 .theme-toggle {
- 
   border: none;
   outline: none;
   cursor: pointer;
