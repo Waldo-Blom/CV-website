@@ -65,6 +65,68 @@ header {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  position: relative;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Active and Hover Effects */
+.nav-menu li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    #3498db 0%,
+    #2980b9 50%,
+    #3498db 100%
+  );
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0);
+}
+
+.nav-menu li:hover a {
+  color: #3498db;
+  text-shadow: 0 0 8px rgba(52, 152, 219, 0.4);
+}
+
+.nav-menu li:hover a::after {
+  width: 100%;
+  box-shadow: 
+    0 0 10px rgba(52, 152, 219, 0.6),
+    0 0 20px rgba(52, 152, 219, 0.4);
+}
+
+.nav-menu li.active a {
+  color: #3498db;
+  text-shadow: 0 0 8px rgba(52, 152, 219, 0.4);
+}
+
+.nav-menu li.active a::after {
+  width: 100%;
+  box-shadow: 
+    0 0 10px rgba(52, 152, 219, 0.6),
+    0 0 20px rgba(52, 152, 219, 0.4);
+}
+
+/* Icon glow effect */
+.nav-menu li:hover .nav-icon {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 8px rgba(52, 152, 219, 0.6));
+}
+
+.nav-menu li.active .nav-icon {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 8px rgba(52, 152, 219, 0.6));
 }
 
 .nav-icon {
