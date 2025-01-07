@@ -1,19 +1,14 @@
-  /* Footer styles */
-  .footer {
-    background-color: var(--background);
-    color: var(--foreground);
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+
+/* Footer styles */
+.footer {
+    color: #fff;
     text-align: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 14px;
+    margin: 0 auto;
   }
   
-  .footer a {
-    color: var(--foreground);
-    text-decoration: none;
-  }
-  
-  .footer a:hover {
-    color: var(--clr-accent-1);
+  .footer p {
+    margin: 0;
   }
