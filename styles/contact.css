@@ -1,6 +1,6 @@
 /* Contact Section */
 .contact-section {
-    padding: 4rem 2rem;
+    padding: 6rem 2rem; 
     background-color: var(--background);
     color: var(--foreground);
 }

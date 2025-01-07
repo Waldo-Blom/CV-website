@@ -519,3 +519,20 @@ header {
     color: var(--clr-accent-1);
   }
   
+/*Space between sections*/
+.technologies-section {
+ 
+  margin-bottom: 10rem; /* Add space after technologies section */
+}
+
+#timeline-header {
+ 
+  margin-bottom: 3rem; /* Space between header and timeline */
+}
+
+.timeline {
+ 
+  margin-bottom: 8rem; /* Add space after timeline section */
+}
+
+
