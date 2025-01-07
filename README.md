@@ -4,13 +4,21 @@
 ## This weeks to do list
 - [ ] Create text based CV
 - [x] Change the nav bar
-- [ ] Create footer
+- [x] Create footer
 - [x] Create contact section
 - [x] Fix the spacing issues between sections
 - [ ] Optimize code and remove redudant code
+- [ ] Make the message send feature functional
 
-### Other
-- [ ] Make the website mobile friendly
+### Fixes to be made
+- [ ] Color changes from dark to light
+- [ ] Nav bar color wrong on first load in
+- [ ] Change the education section to have the dotted background be the same color as the acent 1 color
+- [ ] Change the text on the education section a bit
+- [ ] Fix the alignment of the arrows on the education section.
+- [ ] Make the glow effect less bright on hover for contact section.
+- [ ] Make the buttons on contact section work
+
 
 ### Animations
  - [ ] On website first open animation
