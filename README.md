@@ -3,51 +3,51 @@
 ## What to do
 ## This weeks to do list
 - [ ] Create text based CV
-- [ ] Change the nav bar
+- [x] Change the nav bar
 - [ ] Create footer
-- [ ] Fix the spacing issues between sections
+- [x] Create contact section
+- [x] Fix the spacing issues between sections
 - [ ] Optimize code and remove redudant code
 
 ### Other
 - [ ] Make the website mobile friendly
-- [ ] Fix spacing between sections
 
 ### Animations
  - [ ] On website first open animation
   - [x] Dark / Light mode functionality
   - [ ] Contact me functionality
-  - [ ] Blocky background with click functionality
 
 ### Header
  - [x] Nav hover
- - [x] Dark / Light modeS
- - [ ] Add buttons for linkedin and github at top right of nav bar
- - [ ] Other color options for nav?
- - [ ] Neon hover effect for hover
- - [ ] Active color effect 
- - [ ] Dark light icons change
+ - [x] Dark / Light modes
+ - [x] Neon hover effect for hover
+ - [ ] Active color effect (On website open it is not active??)
+ - [x] Dark light icons change
 
 ### My tech Stack
-- [ ] Make images more the same size
+- [x] Make images more the same size
 - [ ] Add a learning current tech section??
 - [ ] When resizing some display weird, look for fix
 
 ### Education section
 - [x] Make more size adjustable friendly
-- [ ] Remove icons on resize
-- [ ] Add icons 
-- [ ] Fix arrow alignment
+- [x] Remove icons on resize
+- [x] Add icons 
+- [x] Fix arrow alignment
 - [x] Add line sperating two (Look at website inspo)
 - [ ] Make changes to the discriptions of each
 - [ ] Color and text size changes
-- [ ] Dotted background (see watch later vid on yt) OR https://www.magicpattern.design/tools/polka-dot-pattern-generator
+- [x] Dotted background (see watch later vid on yt) OR https://www.magicpattern.design/tools/polka-dot-pattern-generator
 
 ### My Projects
 - [ ] Create a clickable link at the bottom to go to projects section
 - [ ] Create a layout on a seperate page for the projects
 
 ### Footer
-- [ ] Create footer with github and linkin logo and links??
+- [ ] Think of good footer to use
 
-### Contact me form ???
+### Contact me form
+- [ ] Make the form fucntional
+- [ ] Make the github, email and linked in links work
+- [ ] Create new email address that can be used on the website
 
