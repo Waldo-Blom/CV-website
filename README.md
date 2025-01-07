@@ -18,7 +18,8 @@
 - [ ] Fix the alignment of the arrows on the education section.
 - [ ] Make the glow effect less bright on hover for contact section.
 - [ ] Make the buttons on contact section work
-
+- [ ] Experience section not working when switching to work section part
+- [ ] Dark mode not working after adding timeline-script
 
 ### Animations
  - [ ] On website first open animation
