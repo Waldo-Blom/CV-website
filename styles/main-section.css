@@ -1,0 +1,70 @@
+/* Main Section Styles */
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 7rem);
+    text-align: center;
+    background: var(--background);
+    color: var(--foreground);
+    padding: 0 2rem;
+}
+
+/* Heading Styles */
+h1 {
+    margin: 0.5rem 0;
+}
+
+h2 {
+    margin: 0.5rem 0;
+    color: var(--foreground);
+}
+
+p {
+    color: var(--foreground);
+    max-width: 600px;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+/* Buttons */
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.cta-buttons button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.download-btn {
+    background-color: var(--foreground);
+    color: var(--background);
+    font-weight: bold;
+}
+
+.contact-btn {
+    background-color: transparent;
+    border: 1px solid white;
+    color: var(--foreground);
+}
+
+.download-btn:hover {
+    background-color: var(--clr-accent-1);
+    box-shadow: 0 0 20px 4px rgba(8, 100, 180, 0.8),
+        0 0 40px 8px rgba(8, 100, 180, 0.5),
+        0 0 60px 12px rgba(8, 100, 180, 0.3);
+}
+
+.contact-btn:hover {
+    background-color: var(--clr-accent-1);
+    color: var(--foreground);
+    box-shadow: 0 0 20px 4px rgba(8, 100, 180, 0.8),
+        0 0 40px 8px rgba(8, 100, 180, 0.5),
+        0 0 60px 12px rgba(8, 100, 180, 0.3);
+}
