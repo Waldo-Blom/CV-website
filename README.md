@@ -39,7 +39,7 @@
 - [ ] Add a learning current tech section??
 - [ ] When resizing some display weird, look for fix
 - [ ] Change the grid size to be 3 col
-- [ ] Add these to the tech stack : MySQL .NET
+- [ ] Add these to the tech stack : MS SQL, .NET
 
 ### Education section
 - [x] Make more size adjustable friendly

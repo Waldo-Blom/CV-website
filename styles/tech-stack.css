@@ -10,43 +10,44 @@
 
 .technologies-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(3, 250px); 
     padding: 2rem;
+    justify-content: center; 
+    gap: 2rem;
 }
 
 .tech-card {
     background-color: #1a1a1a;
     border-radius: 10px;
-    padding: 1rem;
+    padding: 0.75rem; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.75rem; 
     transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.tech-card img {
+    width: 50px; 
+    height: 50px;
+}
+
+.tech-card h3 {
+    margin: 0;
+    font-size: 1.1rem; 
+    color: #fff;
+}
+
+.tech-card p {
+    margin: 0;
+    font-size: 0.9rem; 
+    color: #ccc;
 }
 
 .tech-card > div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-}
-
-.tech-card img {
-    width: 50px;
-    height: 50px;
-}
-
-.tech-card h3 {
-    margin: 0;
-    font-size: 1.25rem;
-    color: #fff;
-}
-
-.tech-card p {
-    margin: 0;
-    font-size: 0.875rem;
-    color: #ccc;
 }
 
 .tech-card:hover {
@@ -77,8 +78,19 @@
         0 0 60px 12px rgba(148, 60, 171, 0.3);
 }
 
+#NET-card:hover {
+    box-shadow: 0 0 20px 4px rgba(148, 60, 171, 0.8),
+        0 0 40px 8px rgba(148, 60, 171, 0.5),
+        0 0 60px 12px rgba(148, 60, 171, 0.3);
+}
+
 #SQL-card:hover {
     box-shadow: 0 0 20px 4px rgba(8, 100, 180, 0.8),
         0 0 40px 8px rgba(8, 100, 180, 0.5),
         0 0 60px 12px rgba(8, 100, 180, 0.3);
+}
+#MS-SQL-card:hover{
+    box-shadow: 0 0 20px 4px rgba(160, 50, 50, 0.8),
+    0 0 40px 8px rgba(160, 50, 50, 0.5),
+    0 0 60px 12px rgba(160, 50, 50, 0.3);
 }
