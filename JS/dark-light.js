@@ -16,9 +16,7 @@ const enableDarkMode = () => {
   //Color of nav bar change
   nav_ul.classList.add('blur-dark');
   nav_ul.classList.remove('blur-light');
-  //Timeline color change
-  timeline_bg.classList.add('magicpattern-dark');
-  timeline_bg.classList.remove('magicpattern-light');
+
 }
 
 const disableDarkMode = () => {
@@ -29,9 +27,6 @@ const disableDarkMode = () => {
   nav_ul.classList.remove('blur-dark');
   nav_ul.classList.add('blur-light');
 
-    //Timeline color change
-    timeline_bg.classList.remove('magicpattern-dark');
-    timeline_bg.classList.add('magicpattern-light');
 }
  
 // If the user already visited and enabled darkMode

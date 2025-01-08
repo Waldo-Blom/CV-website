@@ -20,6 +20,7 @@
 - [ ] Make the buttons on contact section work
 - [ ] Experience section not working when switching to work section part
 - [ ] Dark mode not working after adding timeline-script
+- [ ] Mobile aligment to be fixed (Switch to mobile display in browser)
 
 ### Animations
  - [ ] On website first open animation
@@ -38,6 +39,7 @@
 - [ ] Add a learning current tech section??
 - [ ] When resizing some display weird, look for fix
 - [ ] Change the grid size to be 3 col
+- [ ] Add these to the tech stack : MySQL .NET
 
 ### Education section
 - [x] Make more size adjustable friendly
