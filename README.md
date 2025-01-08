@@ -37,6 +37,7 @@
 - [x] Make images more the same size
 - [ ] Add a learning current tech section??
 - [ ] When resizing some display weird, look for fix
+- [ ] Change the grid size to be 3 col
 
 ### Education section
 - [x] Make more size adjustable friendly
