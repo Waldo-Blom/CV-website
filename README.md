@@ -13,13 +13,8 @@
 ### Fixes to be made
 - [ ] Color changes from dark to light
 - [ ] Nav bar color wrong on first load in
-- [ ] Change the education section to have the dotted background be the same color as the acent 1 color
-- [ ] Change the text on the education section a bit
-- [ ] Fix the alignment of the arrows on the education section.
 - [ ] Make the glow effect less bright on hover for contact section.
 - [ ] Make the buttons on contact section work
-- [ ] Experience section not working when switching to work section part
-- [ ] Dark mode not working after adding timeline-script
 - [ ] Mobile aligment to be fixed (Switch to mobile display in browser)
 
 ### Animations
@@ -38,8 +33,7 @@
 - [x] Make images more the same size
 - [ ] Add a learning current tech section??
 - [ ] When resizing some display weird, look for fix
-- [ ] Change the grid size to be 3 col
-- [ ] Add these to the tech stack : MS SQL, .NET
+
 
 ### Education section
 - [x] Make more size adjustable friendly
