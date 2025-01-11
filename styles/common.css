@@ -40,3 +40,18 @@ body, html {
  
   margin-bottom: 8rem; /* Add space after timeline section */
 }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .technologies-section {
+    margin-bottom: 5rem; /* Adjust space for smaller screens */
+  }
+
+  #timeline-header {
+    margin-bottom: 1.5rem; /* Adjust space for smaller screens */
+  }
+
+  .timeline {
+    margin-bottom: 4rem; /* Adjust space for smaller screens */
+  }
+}

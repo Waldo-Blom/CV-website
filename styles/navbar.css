@@ -98,12 +98,12 @@ header {
 
 /* Icon glow effect */
 .nav-menu li:hover .nav-icon {
-    transform: scale(1.1);
+   
     filter: drop-shadow(0 0 8px rgba(52, 152, 219, 0.6));
 }
 
 .nav-menu li.active .nav-icon {
-    transform: scale(1.1);
+  
     filter: drop-shadow(0 0 8px rgba(52, 152, 219, 0.6));
 }
 
