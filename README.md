@@ -3,15 +3,10 @@
 ## What to do
 ## This weeks to do list
 - [ ] Create text based CV
-- [x] Change the nav bar
-- [x] Create footer
-- [x] Create contact section
-- [x] Fix the spacing issues between sections
 - [ ] Optimize code and remove redudant code
 - [ ] Make the message send feature functional
 
 ### Fixes to be made
-- [ ] Color changes from dark to light
 - [ ] Nav bar color wrong on first load in
 - [ ] Make the glow effect less bright on hover for contact section.
 - [ ] Make the buttons on contact section work

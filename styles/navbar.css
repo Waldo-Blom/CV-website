@@ -30,6 +30,8 @@ header {
     padding: 1.2rem 4rem;
     border-radius: 20px;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    backdrop-filter: blur(10px);
 }
 
 /* Navigation Menu Icons */
@@ -47,7 +49,6 @@ header {
     transition: all 0.3s ease;
     position: relative;
 }
-
 /* Active and Hover Effects */
 .nav-menu li a::after {
     content: '';
@@ -66,6 +67,7 @@ header {
     box-shadow: 0 0 10px rgba(52, 152, 219, 0);
 }
 
+/* Hover Effects */
 .nav-menu li:hover a {
     color: #3498db;
     text-shadow: 0 0 8px rgba(52, 152, 219, 0.4);
@@ -78,6 +80,7 @@ header {
         0 0 20px rgba(52, 152, 219, 0.4);
 }
 
+/* Active State */
 .nav-menu li.active a {
     color: #3498db;
     text-shadow: 0 0 8px rgba(52, 152, 219, 0.4);
@@ -89,6 +92,9 @@ header {
         0 0 10px rgba(52, 152, 219, 0.6),
         0 0 20px rgba(52, 152, 219, 0.4);
 }
+
+
+
 
 /* Icon glow effect */
 .nav-menu li:hover .nav-icon {
@@ -130,6 +136,17 @@ header {
 
 .theme-toggle:hover {
     background-color: rgba(255, 255, 255, 0.2);
+}
+
+/*dark/light mode*/
+.blur-dark {
+    background-color: rgba(23, 23, 23, 0.8) !important;
+    backdrop-filter: blur(10px);
+}
+
+.blur-light {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    backdrop-filter: blur(10px);
 }
 
 /* Responsive Design */
