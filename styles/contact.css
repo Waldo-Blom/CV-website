@@ -187,4 +187,8 @@
     .submit-button {
         width: 100%;
     }
+    .contact-container {
+        max-width: 100%; /* Adjust max-width for smaller screens */
+        padding: 0 0.5rem; /* Adjust padding for smaller screens */
+    }
 }
