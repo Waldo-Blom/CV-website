@@ -11,6 +11,7 @@
 - [ ] Make the glow effect less bright on hover for contact section.
 - [ ] Make the buttons on contact section work
 - [ ] Mobile aligment to be fixed (Switch to mobile display in browser)
+- [ ] Background does not change when hosted website is used
 
 ### Animations
  - [ ] On website first open animation
