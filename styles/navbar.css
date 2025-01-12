@@ -163,4 +163,12 @@ header {
     #download-cv-nav-item{
         display: none;
     }
+
+    header {
+        position: fixed;
+        top: 1.5rem;
+        width: 100%;
+        z-index: 1000;
+    }
+    
 }
