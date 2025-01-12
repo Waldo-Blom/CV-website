@@ -170,9 +170,6 @@
         grid-template-columns: 1fr;
     }
 
-    .section-title h2 {
-        font-size: 2rem;
-    }
 
     .contact-form-wrapper, .contact-info-wrapper {
         padding: 1.5rem;
