@@ -12,6 +12,7 @@
 - [ ] Make the buttons on contact section work
 - [ ] Mobile aligment to be fixed (Switch to mobile display in browser)
 - [ ] Background does not change when hosted website is used
+- [ ] Neon brightness decease
 
 ### Animations
  - [ ] On website first open animation
@@ -46,7 +47,7 @@
 - [ ] Create a layout on a seperate page for the projects
 
 ### Footer
-- [ ] Think of good footer to use
+- [ ] Add scroll up arrow
 
 ### Contact me form
 - [ ] Make the form fucntional
