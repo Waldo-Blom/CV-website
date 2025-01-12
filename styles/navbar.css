@@ -160,4 +160,7 @@ header {
         margin-left: 1rem;
         padding-left: 1rem;
     }
+    #download-cv-nav-item{
+        display: none;
+    }
 }
