@@ -2,14 +2,7 @@ export const QuestReadyEvent = "questReady";
 
 function formatLayout() {
   const content = document.getElementById("content");
-  Promise.all([
-    fetch("/templates/header.html")
-      .then((response) => response.text())
-      .then((html) => content.insertAdjacentHTML("beforebegin", html)),
-    fetch("/templates/footer.html")
-      .then((response) => response.text())
-      .then((html) => content.insertAdjacentHTML("afterend", html)),
-  ]).then(() => document.dispatchEvent(new Event(QuestReadyEvent)));
+  Promise.all([]).then(() => document.dispatchEvent(new Event(QuestReadyEvent)));
 }
 
 formatLayout();

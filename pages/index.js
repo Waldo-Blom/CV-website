@@ -24,22 +24,16 @@ async function InsertCC(courses) {
   }
 
   const coursecards = document.querySelectorAll(".course");
-  const signupBox = document.getElementById("login-form-container");
+  
   for (const coursecard of coursecards) {
     coursecard.addEventListener("click", async (event) => {
-      if (getUser() == null) return;
-      setTimeout(() => {
-        // these are probaly being added and removed in a few
-        // places, so adding a timeout to ensure they are added
-        signupBox.classList.add("signup_box_active");
-        signupBox.classList.add("blur");
-      }, 0);
+     
 
       document.body.style.overflow = "hidden";
       const courseId = coursecard.dataset.courseId;
       const content = document.getElementById("content");
       const injection = new InjectionHandler().container(content);
-      await injection.template("courseview.html");
+     
       const course = questCourses.get(Number(courseId));
       const startDate = new Date(course.startDate);
       const endDate = new Date(startDate.setFullYear(startDate.getFullYear() + course.durationYears));
