@@ -1,6 +1,16 @@
 # CV-website
 
-## What to do
+
+## Projects section
+### Fixes to be made
+- [ ] Remove redundant code that was copied from previous project
+- [ ] Change code sections to it is says project and not courses
+- [ ] Color changes to background
+- [ ] Light/ Dark functional
+- [ ] Resize changes: Must change from 3 col to 2 col to 1 col depending on the screen size
+- [ ] Change the content of the cards and the main discription
+
+## About section
 ## This weeks to do list
 - [ ] Create text based CV
 - [ ] Optimize code and remove redudant code
@@ -18,6 +28,7 @@
  - [ ] On website first open animation
   - [x] Dark / Light mode functionality
   - [ ] Contact me functionality
+  - [ ] Scroll bounce on main section to show that there is other content
 
 ### Header
  - [x] Nav hover
