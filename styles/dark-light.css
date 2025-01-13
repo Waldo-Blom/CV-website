@@ -16,6 +16,17 @@
 
     --foreground: var(--clr-dark);
     --background: var(--clr-light);
+
+    --Exp-tab: rgba(0, 0, 0, 0.9) ;
+    --Exp-tab-text: white;
+    --Exp-card: rgba(0, 0, 0, 0.9) ;
+    --Exp-img: rgba(0, 0, 0, 0) ;
+    --Exp-before: rgba(0, 0, 0, 0.473);
+    --Exp-icon: var(--clr-dark);
+    --Exp-date: rgba(255, 255, 255, 0.6);
+    --Exp-title: rgba(255, 255, 255, 0.8);
+    --Exp-sub: rgba(255, 255, 255, 0.8);
+    --Exp-descrip: rgba(255, 255, 255, 0.6);
 }
 
 .darkmode {
@@ -35,6 +46,18 @@
 
     --foreground: var(--clr-light);
     --background: var(--clr-dark);
+
+    --Exp-tab: rgba(255, 255, 255, 0.1);
+    --Exp-tab-text: white;
+    --Exp-card: rgba(255, 255, 255, 0.05);
+    --Exp-img: rgba(0, 0, 0, 0) ;
+    --Exp-before: rgba(255, 255, 255, 0.2);
+    --Exp-icon: var(--clr-dark);
+    --Exp-date: rgba(255, 255, 255, 0.6);
+    --Exp-title: rgba(255, 255, 255, 0.8);
+    --Exp-sub: rgba(255, 255, 255, 0.8);
+    --Exp-descrip: rgba(255, 255, 255, 0.6);
+
 }
 
 body {
