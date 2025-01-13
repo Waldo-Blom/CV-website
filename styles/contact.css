@@ -39,7 +39,7 @@
 }
 
 .contact-form-wrapper, .contact-info-wrapper {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: var(--Contact-section);
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -62,8 +62,8 @@
 .form-field textarea {
     width: 100%;
     padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: var(--Contact-input);
+    border: 1px solid var(--Contact-input);
     border-radius: 5px;
     color: var(--foreground);
     font-size: 1rem;
@@ -80,7 +80,7 @@
 .form-field textarea:focus {
     outline: none;
     border-color: var(--clr-accent-1);
-    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+    box-shadow: 0 0 0 2px var(--Contact-input-focus);
 }
 
 /* Button Alignment */
@@ -111,7 +111,8 @@
     align-items: center;
     gap: 1rem;
     padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: var(--Contact-input);
+
     border-radius: 5px;
     margin-bottom: 1rem;
 }
@@ -131,11 +132,13 @@
 .info-content h3 {
     margin: 0;
     font-size: 1.1rem;
+    color: var(--Contact-tab-text);
 }
 
 .info-content p {
     margin: 0.5rem 0 0;
     opacity: 0.8;
+    color: var(--Contact-tab-text);
 }
 
 .info-divider {
