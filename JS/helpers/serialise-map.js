@@ -29,7 +29,7 @@ function reviver(key, value) {
         const entryKey = deserialisedEntry[1][0];
         const entryValue = deserialisedEntry[1][1];
         const parsedKey = isNaN(entryKey) ? entryKey : Number(entryKey);
-        // console.log("parsedKey", parsedKey, deserializedEntry[1][0]);
+       
         map.set(parsedKey, entryValue);
       }
 
@@ -45,9 +45,7 @@ function reviver(key, value) {
 function serialiseEntry(entry) {
   const [key, value] = entry;
   if (value instanceof Set) return [key, { dataType: "Set", value: Array.from(value) }];
-  // if (typeof value === "object")
-  //   return Object.fromEntries(Object.entries(entry).map((subEntry) => serialiseEntry(subEntry)));
-  // if (Array.isArray(value)) return value.map((subEntry) => serialiseEntry(subEntry));
+
   if (Array.isArray(value)) {
     return [
       key,

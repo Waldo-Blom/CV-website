@@ -98,74 +98,34 @@ button:disabled {
 }
 
 /*Course*/
-
-/*-----------------BLACK BAR---------------------------------------------*/
-#bar {
-  background-color: black;
-  position: relative;
-  border-radius: 25px;
-  margin-top: 3%;
+/*----------------------------------------------------------------------*/
+.course-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.3em;
+  margin-bottom: 8em;
+  justify-content: flex-start; /* Changed back to center */
+  align-items: flex-start;
+  width: 100%; /* Added to ensure full width */
 }
 
-#searchbar {
-  padding: 0.7%;
-  margin: 1% 0% 1% 2%;
-
-  width: 15%;
-
-  border: 1px solid grey;
-  border-radius: 25px 0 0 25px;
-  float: left;
-
-  background: #f1f1f1;
-}
-
-#searchbarBtn {
-  position: relative;
-  padding: 0.7%;
-  margin: 1%;
-  margin-left: 0%;
-
-  width: 3%;
-  float: left;
-
-  background: var(--waikawa-gray-500);
-  color: white;
-
-  border: 1px solid grey;
-  border-left: none; /* Prevent double borders */
-  border-radius: 0 25px 25px 0;
+.course {
+  flex: 0 0 calc(30% - 1.3em);
+  min-width: 200px;
+  max-width: calc(30% - 1.3em);
+  padding: 1em;
   cursor: pointer;
 }
-
-#filter {
-  padding: 0.7%;
-  margin: 1%;
-  position: relative;
-  left: 48%;
-  width: 13%;
-
-  border: 1px solid grey;
-  border-radius: 25px;
-}
-
-#sort {
-  padding: 0.7%;
-  margin: 1%;
-  position: relative;
-  left: 49%;
-  width: 11%;
-
-  border: 1px solid grey;
-  border-radius: 25px;
-}
-/*----------------------------------------------------------------------*/
-
-.course-grid {
-  display: grid;
-  grid-template-columns: 33.33% 33.33% 33.33%;
-  row-gap: 1.3em;
-  margin-bottom: 8em;
+ /* This will override the flex-basis when screen is small enough for single column */
+@media (max-width: 700px) {
+  .course{
+    flex: 0 1 100%;
+    max-width: 250px; /* Or whatever maximum width you want for single items */
+  }
+  .course-grid {
+    justify-content: center;
+  }
+ 
 }
 
 #course1img {

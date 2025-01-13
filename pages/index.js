@@ -35,8 +35,6 @@ async function InsertCC(courses) {
       const injection = new InjectionHandler().container(content);
      
       const course = questCourses.get(Number(courseId));
-      const startDate = new Date(course.startDate);
-      const endDate = new Date(startDate.setFullYear(startDate.getFullYear() + course.durationYears));
       injection
         .insertProps({
           courseId,

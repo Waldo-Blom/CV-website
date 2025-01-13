@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
   
     contactBtn.addEventListener("click", () => {
       contactSection.scrollIntoView({
-        behavior: "smooth", // Smooth scrolling
-        block: "start", // Scroll to the start of the section
+        behavior: "smooth", 
+        block: "start", 
       });
     });
   });
