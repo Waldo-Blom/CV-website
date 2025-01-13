@@ -45,9 +45,11 @@ header {
 .nav-menu li a {
     text-decoration: none;
     color: whitesmoke;
-    font-weight: bold;
     transition: all 0.3s ease;
     position: relative;
+    font-size: smaller;
+    font-weight: 500;
+    display: block;
 }
 /* Active and Hover Effects */
 .nav-menu li a::after {

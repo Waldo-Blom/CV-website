@@ -37,13 +37,9 @@
   margin-right: auto;
 }
 
-.page-mt {
-  margin-top: 6em;
-}
-
 #content {
   min-height: 100%;
-  padding-bottom: 180px;
+  padding-bottom: 100px;
 }
 
 h1 {
@@ -59,24 +55,6 @@ a {
   font-size: smaller;
   font-weight: 500;
   display: block;
-}
-
-a:hover {
-  color: var(--waikawa-gray-400);
-}
-
-button,
-input,
-select {
-  font-family: inherit;
-}
-
-button {
-  cursor: pointer;
-}
-
-button:disabled {
-  cursor: not-allowed;
 }
 
 ::-webkit-scrollbar {
@@ -116,17 +94,6 @@ button:disabled {
   padding: 1em;
   cursor: pointer;
 }
- /* This will override the flex-basis when screen is small enough for single column */
-@media (max-width: 700px) {
-  .course{
-    flex: 0 1 100%;
-    max-width: 250px; /* Or whatever maximum width you want for single items */
-  }
-  .course-grid {
-    justify-content: center;
-  }
- 
-}
 
 #course1img {
   height: 10%;
@@ -145,8 +112,6 @@ button:disabled {
 .course {
   padding: 1em;
   cursor: pointer;
-  /* min-height: 100%; */
-  /* transition: transform 1s ease-in-out;*/
 }
 
 .coursecont {
@@ -226,4 +191,15 @@ button:disabled {
 
 h3 {
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  .course{
+    flex: 0 1 100%;
+    max-width: 250px; 
+  }
+  .course-grid {
+    justify-content: center;
+  }
+ 
 }

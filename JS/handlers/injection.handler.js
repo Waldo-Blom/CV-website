@@ -17,6 +17,7 @@ const TEMPLATE_DIRECTORY = "";
  *  }).inject();
  * }
  */
+
 export class InjectionHandler {
   DOMcontainer;
   templateHTML;
