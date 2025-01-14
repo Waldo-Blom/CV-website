@@ -1,18 +1,18 @@
-const TEMPLATE_DIRECTORY = "";
+const TEMPLATE_DIRECTORY = "../templates";
 
 /**
  * Class to handle the injection of HTML templates into the DOM
  * @example
- * const injection = new InjectionHandler().container(coursesHolder);
- * await injection.template("/components/coursecard.html");
- * for (const [key, value] of courses) {
+ * const injection = new InjectionHandler().container(projectsHolder);
+ * await injection.template("/components/projectcard.html");
+ * for (const [key, value] of projects) {
  *  injection
  *   .insertProps({
  *    name: value.title,
  *    duration: value.duration,
- *    courseType: value.coursetype,
+ *    projectType: value.projecttype,
  *   nqfLevel: value.level,
- *   imageLink: `/assets/images/course/${key}.jpg`,
+ *   imageLink: `/assets/images/project/${key}.jpg`,
  *   shortDescription: value.description,
  *  }).inject();
  * }
@@ -36,6 +36,12 @@ export class InjectionHandler {
 
   insertProp(prop, value) {
     if (this.props == undefined) this.props = new Map();
+
+    // Handle arrays specifically
+    if (Array.isArray(value)) {
+      value = value.map((item) => `<li>${item}</li>`).join(""); // Format as list items
+    }
+
     this.props.set(prop, value);
     return this;
   }

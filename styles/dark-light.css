@@ -33,6 +33,20 @@
     --Contact-tab-text: white;
     --Contact-input: rgba(0, 0, 0, 0.432);
     --Contact-input-focus: rgba(7, 98, 136, 0.5);
+
+    
+  --athens-gray-50: #f6f8f9;
+  --athens-gray-100: #f0f2f4;
+  --athens-gray-200: #d6dce1;
+  --athens-gray-300: #b2bec7;
+  --athens-gray-400: #889ba8;
+  --athens-gray-500: #6a7e8d;
+  --athens-gray-600: #546775;
+  --athens-gray-700: #45535f;
+  --athens-gray-800: #3c4750;
+  --athens-gray-900: #353d45;
+  --athens-gray-950: #23292e;
+  
   
 }
 

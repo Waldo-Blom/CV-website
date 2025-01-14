@@ -1,78 +1,53 @@
-import { questCourses } from "../JS/data/course/index.js";
+import { questprojects } from "../JS/data/project/index.js";
 import { InjectionHandler } from "../JS/handlers/injection.handler.js";
 import { QuestReadyEvent } from "../index.js";
 
-// Used to insert the courses (mainly used so the neccesary variables could be declared)
-async function InsertCC(courses) {
-  const coursesHolder = document.getElementById("coursesholder");
-  coursesHolder.innerHTML = "";
-  // Insert all the courses that match the searched course
-  const injection = new InjectionHandler().container(coursesHolder);
-  await injection.template("../templates/coursecard.html");
-  for (const [key, value] of courses) {
+// Helper function to format languages as pills
+function formatLanguagesAsPills(languages) {
+  return languages
+    .map((lang) => `<span class="pill">${lang}</span>`) // Generate a pill for each language
+    .join("");
+}
+
+// Main function to insert projects
+async function InsertCC(projects) {
+  const projectsHolder = document.getElementById("projectsholder");
+  projectsHolder.innerHTML = ""; // Clear container
+
+  const injection = new InjectionHandler().container(projectsHolder);
+  await injection.template("../templates/projectcard.html");
+
+  // Insert all projects
+  for (const [key, value] of projects) {
     injection
       .insertProps({
-        courseId: key,
+        projectId: key,
         name: value.title,
-        duration: value.durationYears + " Years",
-        courseType: value.coursetype,
-        nqfLevel: `NFQ Level ${value.nqfLevel}`,
-        imageLink: `../images/project/${key}.jpg`,
+        languages: formatLanguagesAsPills(value.languages), // Insert formatted pills
         shortDescription: value.description,
+        imageLink: `../images/project/${key}.jpg`,
       })
       .inject();
   }
 
-  const coursecards = document.querySelectorAll(".course");
-  
-  for (const coursecard of coursecards) {
-    coursecard.addEventListener("click", async (event) => {
-     
+  // Add click event listeners to each project card
+  const projectCards = document.querySelectorAll(".project");
+  projectCards.forEach((card, index) => {
+    card.addEventListener("click", () => {
+      const projectId = [...projects.keys()][index]; // Get project ID
+      const project = projects.get(projectId);
 
-      document.body.style.overflow = "hidden";
-      const courseId = coursecard.dataset.courseId;
-      const content = document.getElementById("content");
-      const injection = new InjectionHandler().container(content);
-     
-      const course = questCourses.get(Number(courseId));
-      injection
-        .insertProps({
-          courseId,
-          title: course.title,
-          startDate: startDate.toDateString(),
-          endDate: endDate.toDateString(),
-          longDescription: course.longdescription,
-          // will break if there are no lecturers or venues
-          // but our data is assumed to have at least one lecturer and venue
-          lecturers: Array.from(questLecturers.entries())
-            .filter(([key, _]) => course.lecturers.includes(key))
-            .map(([_, value]) => value.name)
-            .join(", "),
-          venues: Array.from(questVenues.entries())
-            .filter(([key, _]) => course.venues.includes(key))
-            .map(([_, value]) => value.name)
-            .join(", "),
-          credits: course.credits,
-          imageLink: `/assets/images/course/${courseId}.jpg`,
-        })
-        .inject();
-      console.log(questLecturers.entries());
-      document.body.style.overflow = "hidden";
-
-      const closeButton = document.getElementById("close-button");
-      closeButton.addEventListener("click", async (event) => {
-        const signup_box = document.querySelector(".signup_box");
-        signup_box.classList.remove("signup_box_active");
-        signup_box.classList.remove("blur");
-        document.body.style.overflow = "";
-
-        const openedCourse = document.querySelector(".courseview");
-        if (openedCourse) openedCourse.remove();
-      });  
+      // Open the GitHub link in a new tab
+      if (project && project.githubLink) {
+        window.open(project.githubLink, "_blank");
+      } else {
+        console.error("GitHub link not found for project:", projectId);
+      }
     });
-  }
+  });
 }
 
+// Initialize project insertion on the custom event
 document.addEventListener(QuestReadyEvent, () => {
-  InsertCC(questCourses);
+  InsertCC(questprojects);
 });

@@ -1,3 +1,25 @@
+/*scroll bar change to implement*/
+
+/* 
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--athens-gray-100);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--athens-gray-200);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--athens-gray-200);
+} */
+
+
 /*Common css file*/
 :root {
   --waikawa-gray-50: #f2f7fb;
@@ -11,18 +33,6 @@
   --waikawa-gray-800: #4a5989;
   --waikawa-gray-900: #414e6e;
   --waikawa-gray-950: #262c40;
-
-  --athens-gray-50: #f6f8f9;
-  --athens-gray-100: #f0f2f4;
-  --athens-gray-200: #d6dce1;
-  --athens-gray-300: #b2bec7;
-  --athens-gray-400: #889ba8;
-  --athens-gray-500: #6a7e8d;
-  --athens-gray-600: #546775;
-  --athens-gray-700: #45535f;
-  --athens-gray-800: #3c4750;
-  --athens-gray-900: #353d45;
-  --athens-gray-950: #23292e;
 }
 
 .page-container {
@@ -39,94 +49,54 @@
 
 #content {
   min-height: 100%;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
 }
 
-h1 {
-  font-size: 2.3em;
-  font-weight: 900;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
-  color: var(--waikawa-gray-500);
-  font-size: smaller;
-  font-weight: 500;
-  display: block;
-}
-
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--athens-gray-100);
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--athens-gray-200);
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--athens-gray-200);
-}
-
-/*Course*/
-/*----------------------------------------------------------------------*/
-.course-grid {
+#project-h1{
+  text-align: center;
+  margin-top: 2em;
+  }
+  
+/* Project Grid */
+.project-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 1.3em;
   margin-bottom: 8em;
-  justify-content: flex-start; /* Changed back to center */
+  justify-content: flex-start; 
   align-items: flex-start;
-  width: 100%; /* Added to ensure full width */
+  width: 100%; 
 }
 
-.course {
+/* Project Card */
+.project {
   flex: 0 0 calc(30% - 1.3em);
   min-width: 200px;
   max-width: calc(30% - 1.3em);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
   padding: 1em;
   cursor: pointer;
 }
 
-#course1img {
-  height: 10%;
-  width: 95%;
-  margin-bottom: 5%;
-  position: relative;
-  object-fit: contain;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#course1img img {
-  border-radius: 15px;
-}
-
-.course {
-  padding: 1em;
-  cursor: pointer;
-}
-
-.coursecont {
+.project-content {
   padding: 5%;
-  background-color: var(--athens-gray-100);
-  border: 2px solid var(--athens-gray-200);
-  min-height: 100%;
+  background-color: var(--waikawa-gray-100);
+  border: 2px solid var(--waikawa-gray-200);
   border-radius: 25px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  min-height: 400px; /* Uniform card height */
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   transition: all 1s ease-in-out;
   position: relative;
-  display: inline-block;
 }
 
-.coursecont::after {
+.project-content::after {
   content: "";
   border-radius: 5px;
   position: absolute;
@@ -138,68 +108,76 @@ a {
   border-radius: 25px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   opacity: 0;
-  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.coursecont:hover {
-  -webkit-transform: scale(1.1, 1.1);
+.project-content:hover {
   transform: scale(1.1, 1.1);
 }
 
-/* Fade in the pseudo-element with the bigger shadow */
-.coursecont:hover::after {
+.project-content:hover::after {
   opacity: 1;
 }
 
-.tooltip {
-  position: relative;
-  display: block;
-  color: var(--athens-gray-700);
-  border-radius: 6px;
-  padding: 5px 0;
-  font-size: 1rem;
+/* Image Styling */
+.project img {
+  object-fit: cover;
+  border-radius: 15px;
+  width: 100%;
+  max-height: 200px; /* Consistent image size */
+  margin-bottom: 1em;
 }
 
-/*----------------------PILLS---------------------------------------*/
+/* Text and Title */
+.project h3 {
+  flex-shrink: 0;
+  text-align: center;
+  margin-top: 0.5em;
+  text-align: start;
+}
+
+.project p {
+  flex-grow: 1; /* Fills remaining space in the card */
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  text-align: start;
+}
+
+/* Pills */
+.pill-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows pills to wrap if needed */
+  gap: 0.5em; /* Space between pills */
+  margin-top: auto; /* Align pills to the bottom */
+}
+
 .pill {
   font-size: 12px;
   font-weight: 600;
-  color: var(--athens-gray-900);
-  border: 1px solid var(--athens-gray-400);
+  color: var(--waikawa-gray-950);
+  background-color: var(--waikawa-gray-300);
+  border: 1px solid var(--waikawa-gray-400);
   border-radius: 10px;
-  width: auto;
-  float: left;
-  position: relative;
-  margin: 0% 1% 5% 0;
-  padding: 0.3em;
-  display: inline;
-  min-width: 2em;
+  padding: 0.3em 0.8em; 
+  display: inline-block; 
+  white-space: nowrap; 
 }
 
-.CourseType {
-  background-color: var(--athens-gray-300);
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project {
+    flex: 0 1 100%;
+    max-width: 250px; 
+  }
+  .project-grid {
+    justify-content: center;
+  }
 
-.Duration {
-  background-color: var(--athens-gray-300);
-}
-
-.NQFlevel {
-  background-color: var(--athens-gray-300);
+  #project-h1 {
+    margin-top: 3em;
+  }
 }
 
 h3 {
   margin: 0;
-}
-
-@media (max-width: 768px) {
-  .course{
-    flex: 0 1 100%;
-    max-width: 250px; 
-  }
-  .course-grid {
-    justify-content: center;
-  }
- 
 }

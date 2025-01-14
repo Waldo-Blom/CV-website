@@ -4,7 +4,7 @@
 ## Projects section
 ### Fixes to be made
 - [ ] Remove redundant code that was copied from previous project
-- [ ] Change code sections to it is says project and not courses
+- [ ] Change code sections to it is says project and not projects
 - [ ] Color changes to background
 - [ ] Light/ Dark functional
 - [ ] Resize changes: Must change from 3 col to 2 col to 1 col depending on the screen size
