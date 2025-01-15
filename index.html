@@ -13,10 +13,21 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/dark-light.css">
+
+    <link rel="stylesheet" href="styles/scroll-indicator.css">
+    <link rel="stylesheet" href="styles/load-animation.css">
     
 
 </head>
 <body>
+
+  <div class="loader-wrapper">
+    <div class="loader-content">
+      <div class="loader-line"></div>
+      <div class="loader-text">WB</div>
+    </div>
+  </div>
+  
     <div class="grid-container">
           <header>
           <nav class="navbar">
@@ -55,6 +66,15 @@
                     <div class="cta-buttons">
                       <button class="download-btn">Download My Resume</button>
                       <button class="contact-btn" id="contactMeBtn">Contact Me</button>
+                    </div>
+                  </section>
+
+                  <section>
+                    <div class="scroll-indicator">
+                      <svg class="scroll-arrow" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 13l5 5 5-5"/>
+                        <path d="M7 6l5 5 5-5"/>
+                      </svg>
                     </div>
                   </section>
 
@@ -238,5 +258,7 @@
     <script src="JS/navbar.js"></script>
     <script src="JS/contact-btn-scroll.js"></script>
     <script src="JS/timeline-script.js"></script>
+    <script src="JS/scroll-indicator.js"></script>
+    <script src="JS/load-animation.js"></script>
 </body>
 </html>

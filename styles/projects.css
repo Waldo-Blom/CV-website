@@ -36,10 +36,8 @@
 }
 
 .page-container {
-  /* overflow: hidden; */
-  display: flex;
-  flex-direction: column;
   max-width: 1024px;
+  padding: 0 1em;
 }
 
 .mx-auto {
@@ -68,33 +66,57 @@
   width: 100%; 
 }
 
-/* Project Card */
-.project {
-  flex: 0 0 calc(30% - 1.3em);
-  min-width: 200px;
-  max-width: calc(30% - 1.3em);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: stretch;
-  padding: 1em;
-  cursor: pointer;
+/* Project Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 280px));
+  gap: 2.5em;
+  margin: 2em auto 8em;
+  width: 100%;
+  max-width: 1024px;
+  justify-content: center;
+  padding: 0 1em;
 }
 
+/* Project Card */
+.project {
+  width: 100%;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1024px) {
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(180px, 260px));
+    gap: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: repeat(1, minmax(180px, 240px));
+    gap: 1.8em;
+  }
+}
+
+/* Project content styles */
 .project-content {
   padding: 5%;
   background-color: var(--waikawa-gray-100);
   border: 2px solid var(--waikawa-gray-200);
   border-radius: 25px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  min-height: 400px; /* Uniform card height */
-  max-height: 400px;
+  min-height: 450px; 
+  max-height: 450px; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   transition: all 1s ease-in-out;
   position: relative;
 }
+
 
 .project-content::after {
   content: "";
@@ -124,7 +146,7 @@
   object-fit: cover;
   border-radius: 15px;
   width: 100%;
-  max-height: 200px; /* Consistent image size */
+  max-height: 200px; 
   margin-bottom: 1em;
 }
 
@@ -134,21 +156,23 @@
   text-align: center;
   margin-top: 0.5em;
   text-align: start;
+  color: black;
 }
 
 .project p {
-  flex-grow: 1; /* Fills remaining space in the card */
+  flex-grow: 1; 
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   text-align: start;
+  color: rgba(0, 0, 0, 0.778) ;
 }
 
 /* Pills */
 .pill-container {
   display: flex;
-  flex-wrap: wrap; /* Allows pills to wrap if needed */
-  gap: 0.5em; /* Space between pills */
-  margin-top: auto; /* Align pills to the bottom */
+  flex-wrap: wrap; 
+  gap: 0.5em;
+  margin-top: auto;
 }
 
 .pill {
@@ -178,6 +202,3 @@
   }
 }
 
-h3 {
-  margin: 0;
-}

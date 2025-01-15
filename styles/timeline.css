@@ -1,13 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  }
+
 
   .timeline-container {
     max-width: full;
     margin: 0 auto;
+    box-sizing: border-box;
   }
 
   .title {

@@ -65,7 +65,7 @@
     background-color: var(--Contact-input);
     border: 1px solid var(--Contact-input);
     border-radius: 5px;
-    color: var(--foreground);
+    color: white;
     font-size: 1rem;
     box-sizing: border-box; 
     transition: all 0.3s ease;

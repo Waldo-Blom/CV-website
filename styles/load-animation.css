@@ -1,0 +1,76 @@
+/* Loader styles */
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+  }
+  
+  .loader-content {
+    text-align: center;
+  }
+  
+  .loader-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--foreground);
+    margin-bottom: 1rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease-out forwards;
+  }
+  
+  .loader-line {
+    width: 0;
+    height: 3px;
+    background: linear-gradient(to right, var(--clr-accent-1), var(--foreground));
+    margin: 1rem auto;
+    animation: lineProgress 1.5s ease-out forwards;
+  }
+  
+  /* Hide content initially */
+  .content-hidden {
+    opacity: 0;
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes lineProgress {
+    to {
+      width: 100px;
+    }
+  }
+  
+  /* Content fade in */
+  .fade-in {
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Ensure content is hidden initially */
+  .grid-container {
+    opacity: 0;
+  }
