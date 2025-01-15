@@ -24,27 +24,27 @@ small {font-size: 0.750rem; /* 12px */}
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     h1 {
-        font-size: 2rem; /* 32px */
+        font-size: 2rem; 
     }
 
     h2 {
-        font-size: 1.75rem; /* 28px */
+        font-size: 1.75rem; 
     }
 
     h3 {
-        font-size: 1.5rem; /* 24px */
+        font-size: 1.5rem; 
     }
 
     h4 {
-        font-size: 1.25rem; /* 20px */
+        font-size: 1.25rem; 
     }
 
     h5 {
-        font-size: 1rem; /* 16px */
+        font-size: 1rem; 
     }
 
     p,a{
-        font-size: 0.875rem; /* 14px */
+        font-size: 0.9rem; 
     }
 
     small {

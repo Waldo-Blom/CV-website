@@ -48,7 +48,7 @@
   .timeline::before {
     content: '';
     position: absolute;
-    left: 50px;
+    left: 5px;
     top: 0;
     bottom: 0;
     width: 2px;
@@ -71,24 +71,7 @@
     }
   }
 
-  .timeline-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: var(--Exp-img);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-    z-index: 1;
-  }
 
-  .timeline-icon img {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-  }
 
   .timeline-content {
     background: var(--Exp-card);

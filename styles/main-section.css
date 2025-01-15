@@ -12,16 +12,16 @@
 }
 
 /* Heading Styles */
-h1 {
+.main-section h1 {
     margin: 0.5rem 0;
 }
 
-h2 {
+.main-section h2 {
     margin: 0.5rem 0;
     color: var(--foreground);
 }
 
-p {
+.main-section p {
     color: var(--foreground);
     max-width: 600px;
     line-height: 1.5;

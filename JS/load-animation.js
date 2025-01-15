@@ -33,5 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
           element.style.transition = 'all 0.5s ease-out';
         }, index * 200); // Stagger the animations
       });
-    }, 2000); // Loader shows for 2 seconds
+    }, 1500); // Loader shows for 2 seconds
   });
+  
