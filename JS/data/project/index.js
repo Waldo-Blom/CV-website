@@ -4,31 +4,31 @@ export const questprojects = new ValidateDataMap([
   [
     1,
     {
-      title: "Bachelor of Computing",
+      title: "Test title",
       languages: ["Python", "JavaScript", "Java","C++"],	 
       description:
-        "Our Bachelor of Computing degree covers essential computing skills, troubleshooting, and real-world application across disciplines.",
-      githubLink: "",
+        "This is only a test display to see how the discription will look.",
+      githubLink: "https://github.com/Waldo-Blom/CV-website",
     },
   ],
   [
     2,
     {
-      title: "Web Development Essentials",
+      title: "A bit longer Title",
       languages: ["HTML", "CSS", "JavaScript"], 
       description:
-        "Learn how to build responsive and dynamic websites using modern web technologies.",
-      githubLink: "",
+        "This is also a test display to see how the discription will look but longer.",
+      githubLink: "https://github.com/Waldo-Blom/CV-website",
     },
   ],
   [
     3,
     {
-      title: "Data Science Toolkit",
+      title: "Test Container for the longest title",
       languages: ["Python", "R"], 
       description:
-        "Explore data analysis, visualization, and machine learning using Python and R.",
-      githubLink: "",
+        "This is another test display to see how the discription will look but with a lot more words to see it will effect the layout changes if the text in the containder is alot of text.",
+      githubLink: "https://github.com/Waldo-Blom/CV-website",
     },
   ],
 ]);
