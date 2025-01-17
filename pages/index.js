@@ -25,7 +25,7 @@ async function InsertCC(projects) {
         name: value.title,
         languages: formatLanguagesAsPills(value.languages), // Insert formatted pills
         shortDescription: value.description,
-        imageLink: `../images/project/${key}.jpg`,
+        imageLink: `../images/project/${key}.png`,
       })
       .inject();
   }

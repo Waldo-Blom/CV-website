@@ -4,42 +4,44 @@ export const questprojects = new ValidateDataMap([
   [
     1,
     {
-      title: "Test title",
-      languages: ["Python", "JavaScript", "Java","C++"],	 
+      title: "CV Website",
+      languages: ["HTML", "CSS", "JavaScript"], 
       description:
-        "This is only a test display to see how the discription will look.",
+        "This is my personal CV website. I created this website to showcase my projects and skills. The website website you are currently using :)",
       githubLink: "https://github.com/Waldo-Blom/CV-website",
     },
+    
   ],
   [
     2,
     {
-      title: "A bit longer Title",
-      languages: ["HTML", "CSS", "JavaScript"], 
+      title: "Flappy Bird ",
+      languages: ["C#", 'Unity'],	 
       description:
-        "This is also a test display to see how the discription will look but longer.",
-      githubLink: "https://github.com/Waldo-Blom/CV-website",
+        "I remade Flappy Bird in Unity with C# as a project to learn more about game development. Check out the code on my GitHub.",
+      githubLink: "https://github.com/Waldo-Blom/FlappyBird",
     },
   ],
   [
     3,
     {
-      title: "Test Container for the longest title",
-      languages: ["Python", "R"], 
+      title: "WPR281 Project",
+      languages: ["HTML", "CSS", "JavaScript"], 
       description:
-        "This is another test display to see how the discription will look but with a lot more words to see it will effect the layout changes if the text in the containder is alot of text.",
-      githubLink: "https://github.com/Waldo-Blom/CV-website",
+        "This is my Web programming 281 project. The goal of the project was to create an interactive course website for Belgium Campus.The project was created in a team of 4 people.",
+      githubLink: "https://github.com/cykreet/quest",
     },
   ],
   [
     4,
     {
-      title: "Test Container for the longest title",
-      languages: ["Python", "R"], 
+      title: "Playlist converter",
+      languages: ["HTML", "CSS", "JavaScript", "TypeScript", "YouTube API", "Spotity API"], 
       description:
-        "This is another test display to see how the discription will look but with a lot more words to see it will effect the layout changes if the text in the containder is alot of text.",
+        "This project was created to convert YouTube playlists to Spotify playlists and vice versa. The project is still currently under development.",
       githubLink: "https://github.com/Waldo-Blom/CV-website",
     },
   ],
+ 
 ]);
 
