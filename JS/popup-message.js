@@ -25,7 +25,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
            setTimeout(() => {
             popup.classList.remove('show');
             popup.classList.add('hidden');
-          }, 5000);
+          }, 8000);
           
           // Reset form
           form.reset();
