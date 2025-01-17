@@ -156,7 +156,7 @@
                           <div class="timeline-content">
                             <div class="timeline-date">2018 - 2022</div>
                             <div class="timeline-title">Hoërskool Garsfontein</div>
-                            <div class="timeline-subtitle">Graduated highschool with 4 distinctions with IT being my top subject.</div>
+                            <div class="timeline-subtitle">I graduated high school with 4 distinctions, with IT being my top subject.</div>
                           </div>
                         </div>
                       </div>
@@ -187,14 +187,21 @@
                       <div class="contact-grid">
                         <div class="contact-form-wrapper">
                           <form id="contactForm" class="contact-form" action="https://formsubmit.co/49d54d93d84d2ed8ce0f4adbade57d27" method="POST">
+                            <!-- Honeypot -->
+                            <input type="text" name="_honey" style="display: none" />
+                            <!-- Disable Captcha -->
+                            <input type="hidden" name="_captcha" value="false">
+
+                            <input type="hidden" name="_next" valude="https://waldo-blom.github.io/CV-website/">
+
                             <div class="form-field">
-                              <input type="text" id="name" placeholder="Name" required>
+                              <input type="text" id="name" placeholder="Name" name="Name" required>
                             </div>
                             <div class="form-field">
-                              <input type="email" id="email" placeholder="Email" required>
+                              <input type="email" id="email" placeholder="Email" name="Email" required>
                             </div>
                             <div class="form-field">
-                              <textarea id="message" placeholder="Message" required></textarea>
+                              <textarea id="message" placeholder="Message" name="Message" required></textarea>
                             </div>
                             <div class="form-actions">
                               <button type="submit" class="submit-button">Send Message</button>
