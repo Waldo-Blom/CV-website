@@ -1,5 +1,6 @@
 /* Contact Section */
 .contact-section {
+    position: relative;
     padding: 6rem 2rem; 
     background-color: var(--background);
     color: var(--foreground);
@@ -166,6 +167,42 @@
     opacity: 1;
     transform: translateY(-2px);
 }
+
+.popup-message {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem 2rem;
+    background-color: #28a745;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: visible;
+  }
+  
+  .popup-message.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .popup-message.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  @keyframes fadeInOut {
+    0%, 80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
