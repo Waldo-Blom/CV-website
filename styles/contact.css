@@ -167,43 +167,52 @@
     opacity: 1;
     transform: translateY(-2px);
 }
-
 .popup-message {
-    position: absolute;
-    top: 10%;
+    position: fixed;
     left: 50%;
-    transform: translateX(-50%);
-    padding: 1rem 2rem;
+    transform: translate(-50%, 0);
+    padding: 0.75rem 1.5rem;
     background-color: #28a745;
     color: white;
     font-size: 1.2rem;
-    border-radius: 8px;
+    border-radius: 6px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 9999;
+    transition: opacity 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    max-width: 400px; /* Set fixed maximum width */
+    width: auto;
     opacity: 0;
-    visibility: visible;
+    visibility: hidden;
+    margin: 0 auto;
+  }
+  
+  .popup-text {
+    white-space: nowrap; /* Keep text on one line */
+  }
+  
+  .popup-close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.25rem;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .popup-close-btn:hover {
+    opacity: 0.8;
   }
   
   .popup-message.show {
     opacity: 1;
     visibility: visible;
   }
-  
-  .popup-message.hidden {
-    opacity: 0;
-    visibility: hidden;
-  }
-  
-  @keyframes fadeInOut {
-    0%, 80% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .contact-grid {

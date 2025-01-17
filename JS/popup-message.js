@@ -1,27 +1,33 @@
 document.getElementById('contactForm').addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevent the default form submission behavior
-
+    event.preventDefault();
+  
     const form = event.target;
-
-    // Perform the form submission via Formsubmit
+    const popup = document.getElementById('popupMessage');
+    const closeBtn = document.getElementById('closePopup');
+  
+    // Handle popup close button
+    closeBtn.addEventListener('click', function() {
+      popup.classList.remove('show');
+      popup.classList.add('hidden');
+    });
+  
     fetch(form.action, {
       method: form.method,
       body: new FormData(form),
     })
       .then(response => {
         if (response.ok) {
-          // Show the popup message
-          const popup = document.getElementById('popupMessage');
+          // Show popup immediately
           popup.classList.remove('hidden');
           popup.classList.add('show');
 
-          // Hide the popup after 3 seconds
-          setTimeout(() => {
+           // Hide the popup after 3 seconds
+           setTimeout(() => {
             popup.classList.remove('show');
             popup.classList.add('hidden');
-          }, 3000);
-
-          // Reset the form fields
+          }, 5000);
+          
+          // Reset form
           form.reset();
         } else {
           alert('An error occurred. Please try again.');
