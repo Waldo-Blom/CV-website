@@ -36,10 +36,10 @@ export const questprojects = new ValidateDataMap([
     4,
     {
       title: "Playlist converter",
-      languages: ["HTML", "CSS", "JavaScript", "TypeScript", "YouTube API", "Spotity API"], 
+      languages: ["HTML", "CSS", "JavaScript", "YouTube API", "Spotity API"], 
       description:
-        "This project was created to convert YouTube playlists to Spotify playlists and vice versa. The project is still currently under development.",
-      githubLink: "https://github.com/Waldo-Blom/CV-website",
+        "This project was created to convert a Spotify playlist into a Youtube laylist. The project is still currently under development.",
+      githubLink: "https://github.com/Waldo-Blom/Playlist-Converter",
     },
   ],
  
