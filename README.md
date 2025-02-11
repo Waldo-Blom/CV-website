@@ -16,7 +16,7 @@ A personal portfolio website showcasing my skills, experience, and contact infor
 
 ## Website Link
 
-You can visit the live website here: [Portfolio Website](https://waldo-blom.github.io/CV-website/)  
+You can visit the live website here: [Portfolio Website](https://waldo-blom-portfolio.vercel.app/)  
 
 
 ---
