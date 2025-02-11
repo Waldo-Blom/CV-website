@@ -1,15 +1,22 @@
 # Portfolio Website
-A personal portfolio website showcasing my skills, experience, and contact information. Built with HTML, CSS, and JavaScript.
 
-## Features
-Light/Dark mode toggle
-Interactive tech stack display
-Experience timeline
-Contact form
-Responsive design
+A personal portfolio website showcasing my skills, experience, and contact information. Built with **HTML**, **CSS**, and **JavaScript**.
+
+---
+
 
 ## Technologies
-HTML5
-CSS3
-JavaScript
-FormSubmit API
+
+- **HTML5**: For structuring the website.
+- **CSS3**: For styling and animations.
+- **JavaScript**: For interactivity and dynamic content.
+- **FormSubmit API**: For handling form submissions.
+
+---
+
+## Website Link
+
+You can visit the live website here: [Portfolio Website](https://waldo-blom-portfolio.vercel.app/)  
+
+
+---
