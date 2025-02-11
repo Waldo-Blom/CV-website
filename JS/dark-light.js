@@ -1,12 +1,17 @@
+// Description: This file is used to toggle between dark and light mode. It also saves the user's preference in local storage.
+
+//Import the bg based on the theme
+import { createParticles } from './stars.js';
+
+
 // check for saved 'darkMode' in localStorage
 let darkMode = localStorage.getItem('darkMode'); 
 
 
 const button = document.getElementById('dark-mode-toggle');
 const nav_ul = document.getElementById('nav-ul');
-const timeline_bg = document.getElementById('timeline-bg')
-
-
+const timeline_bg = document.getElementById('timeline-bg');
+const bgTheme = document.getElementById('bg-theme'); // Background theme container
 const darkModeToggle = document.querySelector('#dark-mode-toggle');
 
 const enableDarkMode = () => {
@@ -17,6 +22,9 @@ const enableDarkMode = () => {
   //Color of nav bar change
   nav_ul.classList.add('blur-dark');
   nav_ul.classList.remove('blur-light');
+   // Update background theme
+   bgTheme.className = 'stars'; // Set class to stars for dark mode
+   createParticles(bgTheme, 'enabled'); // Create stars
 
 }
 
@@ -27,6 +35,9 @@ const disableDarkMode = () => {
   button.innerHTML = '<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" height="20" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm72,88a64,64,0,1,1-64-64A64.07,64.07,0,0,1,192,128Zm-16,0a48,48,0,1,0-48,48A48.05,48.05,0,0,0,176,128ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM48,128a8,8,0,0,0-8-8H16a8,8,0,0,0,0,16H40A8,8,0,0,0,48,128Zm80,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V216A8,8,0,0,0,128,208Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"></path></svg>';
   nav_ul.classList.remove('blur-dark');
   nav_ul.classList.add('blur-light');
+  // Update background theme
+  bgTheme.className = 'sun-rays'; // Set class to sparkles for light mode
+  createParticles(bgTheme, 'disabled'); // Create sparkles
 }
  
 // If the user already visited and enabled darkMode

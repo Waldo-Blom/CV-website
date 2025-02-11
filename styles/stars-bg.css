@@ -1,0 +1,50 @@
+/* Dark mode stars */
+#bg-theme.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#bg-theme.stars .star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: twinkle 3s infinite ease-in-out;
+}
+
+/* Light mode sun background */
+#bg-theme.sun-rays {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--clr-light);
+    overflow: hidden;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Central sun */
+.sun {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle, #ffcc33, #ff9900);
+    border-radius: 50%;
+    box-shadow: 0 0 40px rgba(255, 204, 51, 0.8);
+}
+
+/* Light mode background */
+/*Make it so it looks like sun rays??*/	
+

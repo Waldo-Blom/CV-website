@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" href="styles/scroll-indicator.css">
     <link rel="stylesheet" href="styles/load-animation.css">
+    <link rel="stylesheet" href="styles/stars-bg.css">
 
     <link rel="shortcut icon" href="images/WB-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -30,7 +31,10 @@
       <div class="loader-text">WB</div>
     </div>
   </div>
-  
+
+   <!-- Twinkling stars background -->
+   <div id="bg-theme" class="stars"></div>
+
     <div class="grid-container">
           <header>
           <nav class="navbar">
@@ -259,11 +263,11 @@
             <footer class="footer">
               <p>&copy; 2025 Waldo Blom.</p>
             </footer>
-
-         
     </div>
- 
-    <script src="JS/dark-light.js"></script>
+
+
+    <script type="module" src="JS/stars.js"></script>
+    <script  type="module" src="JS/dark-light.js"></script>
     <script src="JS/navbar.js"></script>
     <script src="JS/contact-btn-scroll.js"></script>
     <script src="JS/timeline-script.js"></script>

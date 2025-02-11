@@ -2,7 +2,6 @@
 .contact-section {
     position: relative;
     padding: 6rem 2rem; 
-    background-color: var(--background);
     color: var(--foreground);
 }
 
