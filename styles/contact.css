@@ -119,9 +119,9 @@
 
 .info-card:hover {
     background-color: var(--clr-accent-1);
-    box-shadow: 0 0 20px 4px rgba(8, 100, 180, 0.3),
-        0 0 40px 8px rgba(8, 100, 180, 0.4),
-        0 0 60px 12px rgba(8, 100, 180, 0.1);
+    box-shadow: 0 0 20px 4px rgba(8, 100, 180, 0.4),
+        0 0 40px 8px rgba(8, 100, 180, 0.2),
+        0 0 60px 12px rgba(8, 100, 180, 0.3);
 }
 
 .info-icon {
@@ -211,6 +211,31 @@
   .popup-message.show {
     opacity: 1;
     visibility: visible;
+  }
+
+  /* Spinner for loading annimation */
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #28a745; /* Match your theme color */
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    margin-left: 10px; /* Adjust spacing as needed */
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .hidden {
+    display: none;
   }
 /* Responsive Adjustments */
 @media (max-width: 768px) {
