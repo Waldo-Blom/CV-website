@@ -8,6 +8,7 @@
     background: transparent;
     overflow: hidden;
     z-index: -1;
+    background: black;
 }
 
 #bg-theme.stars .star {
@@ -20,31 +21,169 @@
     animation: twinkle 3s infinite ease-in-out;
 }
 
-/* Light mode sun background */
-#bg-theme.sun-rays {
+/* Light mode - Sunrise with blue sky */
+#bg-theme.sunrise {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--clr-light);
+    background: linear-gradient(180deg, 
+        #1e4877 0%, 
+        #4584b4 15%, 
+        #87CEEB 30%, 
+        #ffd3a573 50%, 
+        #ff8a42ad 70%, 
+        #ff4400b7 100%); 
     overflow: hidden;
     z-index: -1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-/* Central sun */
-.sun {
+/* Sun for light mode */
+#bg-theme.sunrise .sun {
     position: absolute;
-    width: 80px;
-    height: 80px;
-    background: radial-gradient(circle, #ffcc33, #ff9900);
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, #FFD700 20%, #FF8C00 70%);
     border-radius: 50%;
-    box-shadow: 0 0 40px rgba(255, 204, 51, 0.8);
+    box-shadow: 0 0 80px #FF8C00, 0 0 120px #ff4400;
+    animation: rise 10s ease-in-out 1 forwards;
 }
 
-/* Light mode background */
-/*Make it so it looks like sun rays??*/	
+/* Sun rays */
+#bg-theme.sunrise .sun::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 217, 0, 0.37) 10%, transparent 50%);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: pulse 3s infinite ease-in-out;
+}
 
+#bg-theme.sunrise .sun::after {
+    content: '';
+    display: none;
+}
+
+/* Clouds */
+.cloud {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50px;
+    animation: float 20s linear 1 forwards;
+    opacity: 0;
+}
+
+.cloud::before,
+.cloud::after {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+}
+
+.cloud.one {
+    width: 100px;
+    height: 30px;
+    top: 20%;
+    left: -100px;
+    animation: float 10s linear 1 forwards; /* Shorter duration for first cloud */
+}
+
+.cloud.one::before {
+    width: 35px;
+    height: 35px;
+    top: -20px;
+    left: 10px;
+}
+
+.cloud.one::after {
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 40px;
+}
+
+.cloud.two {
+    width: 140px;
+    height: 40px;
+    top: 40%;
+    left: -140px;
+    animation: float 12s linear 2s forwards; /* Slightly longer duration with delay */
+}
+
+.cloud.two::before {
+    width: 45px;
+    height: 45px;
+    top: -25px;
+    left: 15px;
+}
+
+.cloud.two::after {
+    width: 65px;
+    height: 65px;
+    top: -30px;
+    left: 55px;
+}
+
+
+
+/* Animations */
+@keyframes rise {
+    0% {
+        bottom: -50px;
+        opacity: 0;
+    }
+    50% {
+        bottom: 50%;
+        opacity: 1;
+    }
+    100% {
+        bottom: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 0.8;
+    }
+}
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0.2;
+    }
+}
+
+@keyframes float {
+    0% {
+        left: -150px;
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.8;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
+}

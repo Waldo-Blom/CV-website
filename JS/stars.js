@@ -10,14 +10,15 @@ export function createStar(bgTheme) {
     bgTheme.appendChild(star);
 }
 
-// Function to create sun rays spreading from the top-right
-// export function createSunRay(bgTheme) {
-// }
+export function createSun(bgTheme) {
+    const sun = document.createElement('div');
+    sun.classList.add('sun');
+    bgTheme.appendChild(sun);
+}
 
-// Function to create particles based on the theme
 export function createParticles(bgTheme, darkMode) {
     bgTheme.innerHTML = ''; // Clear existing particles
-    bgTheme.classList.remove('stars', 'sun-rays');
+    bgTheme.classList.remove('stars', 'sunrise'); // Remove old classes
 
     if (darkMode === 'enabled') {
         bgTheme.classList.add('stars');
@@ -25,11 +26,14 @@ export function createParticles(bgTheme, darkMode) {
             createStar(bgTheme);
         }
     } else {
-        // bgTheme.classList.add('sun-rays');
-        // for (let i = 0; i < 200; i++) { 
-        //     createSunRay(bgTheme);
-        // }
+        bgTheme.classList.add('sunrise');
+        createSun(bgTheme);
+        // Recreate clouds
+        const cloudOne = document.createElement('div');
+        cloudOne.classList.add('cloud', 'one');
+        const cloudTwo = document.createElement('div');
+        cloudTwo.classList.add('cloud', 'two');
+        bgTheme.appendChild(cloudOne);
+        bgTheme.appendChild(cloudTwo);
     }
 }
-
-
