@@ -25,7 +25,7 @@ export const questprojects = new ValidateDataMap([
   [
     3,
     {
-      title: "WPR281 Project",
+      title: "Quest",
       languages: ["HTML", "CSS", "JavaScript"], 
       description:
         "This is my Web programming 281 project. The goal of the project was to create an interactive course website for Belgium Campus.The project was created in a team of 4 people.",
