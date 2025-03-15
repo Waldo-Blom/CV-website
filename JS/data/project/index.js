@@ -35,11 +35,21 @@ export const questprojects = new ValidateDataMap([
   [
     4,
     {
-      title: "Playlist converter",
+      title: "SongSync-Playlist-Converter",
       languages: ["HTML", "CSS", "JavaScript", "YouTube API", "Spotity API"], 
       description:
-        "This project was created to convert a Spotify playlist into a Youtube laylist. The project is still currently under development.",
-      githubLink: "https://github.com/Waldo-Blom/Playlist-Converter",
+        "This project was created to convert a Spotify playlist into a Youtube laylist. The project is still currently under development and is set as a Private github repo.",
+      githubLink: "https://github.com/Waldo-Blom/SongSync-Playlist-Converter",
+    },
+  ],
+  [
+    5,
+    {
+      title: "Tetris",
+      languages: ["Svelte", "Typescript", "HTML", "CSS"], 
+      description:
+        "This repo is used in order for me to learn Typescript and Svelte :)",
+      githubLink: "https://github.com/Waldo-Blom/Tetris",
     },
   ],
  
