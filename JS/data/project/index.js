@@ -58,5 +58,29 @@ export const questprojects = new ValidateDataMap([
     },
   ],
  
+  [
+    6,
+    {
+      title: "Sky High Super Hero Academy",
+      languages: ["C#", ".NET", "Windows Forms", "File I/O"],
+      description:
+        "Built for our Programming 282 module to demonstrate core OOP and file I/O principles through a practical desktop application. A Windows Forms app for managing superhero records, themed around the Sky High movie universe — with hero CRUD operations, automatic rank calculation, and a file-based databse",
+      githubLink: "https://github.com/Waldo-Blom/PRG282-Sky_High_Super_Hero_Academy",
+      category: "University Projects",
+    },
+  ],
+ 
+  [
+    7,
+    {
+      title: "Sign-Speak AI",
+      languages: ["Node.js", "Express", "Python", "Flask", "PyTorch", "MediaPipe", "MongoDB", "WebSocket", "WebRTC", "JavaScript"],
+      description:
+       "Our PRJ381 yearly project, built as a team of 14. A real-time South African Sign Language translator that uses computer vision and machine learning to convert SASL gestures into text and speech. The live-hosted version is unfortunately no longer available, but the landing page covers the full breakdown.",
+      githubLink: "https://github.com/Waldo-Blom/PRJ381",
+      category: "University Projects",
+    },
+  ],
+ 
 ]);
 
