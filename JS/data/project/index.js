@@ -9,6 +9,7 @@ export const questprojects = new ValidateDataMap([
       description:
         "This is my personal CV website. I created this website to showcase my projects and skills. The website website you are currently using :)",
       githubLink: "https://github.com/Waldo-Blom/CV-website",
+      category: "Personal Projects",
     },
     
   ],
@@ -20,6 +21,7 @@ export const questprojects = new ValidateDataMap([
       description:
         "I remade Flappy Bird in Unity with C# as a project to learn more about game development. Check out the code on my GitHub.",
       githubLink: "https://github.com/Waldo-Blom/FlappyBird",
+      category: "Personal Projects",
     },
   ],
   [
@@ -30,6 +32,7 @@ export const questprojects = new ValidateDataMap([
       description:
         "This is my Web programming 281 project. The goal of the project was to create an interactive course website for Belgium Campus.The project was created in a team of 4 people.",
       githubLink: "https://github.com/cykreet/quest",
+      category: "University Projects",
     },
   ],
   [
@@ -40,6 +43,7 @@ export const questprojects = new ValidateDataMap([
       description:
         "This project was created to convert a Spotify playlist into a Youtube laylist. The project is still currently under development and is set as a Private github repo.",
       githubLink: "https://github.com/Waldo-Blom/SongSync-Playlist-Converter",
+      category: "Personal Projects",
     },
   ],
   [
@@ -50,6 +54,7 @@ export const questprojects = new ValidateDataMap([
       description:
         "This repo is used in order for me to learn Typescript and Svelte :)",
       githubLink: "https://github.com/Waldo-Blom/Tetris",
+      category: "Personal Projects",
     },
   ],
  

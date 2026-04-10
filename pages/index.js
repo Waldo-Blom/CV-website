@@ -11,14 +11,21 @@ function formatLanguagesAsPills(languages) {
 
 // Main function to insert projects
 async function InsertCC(projects) {
-  const projectsHolder = document.getElementById("projectsholder");
-  projectsHolder.innerHTML = ""; // Clear container
+  const universityHolder = document.getElementById("university-projects-holder");
+  const personalHolder = document.getElementById("personal-projects-holder");
+  universityHolder.innerHTML = ""; // Clear container
+  personalHolder.innerHTML = ""; // Clear container
 
-  const injection = new InjectionHandler().container(projectsHolder);
-  await injection.template("../templates/projectcard.html");
+  const injectionUni = new InjectionHandler().container(universityHolder);
+  const injectionPer = new InjectionHandler().container(personalHolder);
+  await injectionUni.template("../templates/projectcard.html");
+  await injectionPer.template("../templates/projectcard.html");
 
-  // Insert all projects
+  // Insert projects by category
   for (const [key, value] of projects) {
+    const holder = value.category === "University Projects" ? universityHolder : personalHolder;
+    const injection = value.category === "University Projects" ? injectionUni : injectionPer;
+
     injection
       .insertProps({
         projectId: key,
@@ -32,9 +39,9 @@ async function InsertCC(projects) {
 
   // Add click event listeners to each project card
   const projectCards = document.querySelectorAll(".project");
-  projectCards.forEach((card, index) => {
+  projectCards.forEach((card) => {
     card.addEventListener("click", () => {
-      const projectId = [...projects.keys()][index]; // Get project ID
+      const projectId = parseInt(card.getAttribute("data-project-id"));
       const project = projects.get(projectId);
 
       // Open the GitHub link in a new tab
