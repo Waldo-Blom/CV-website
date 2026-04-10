@@ -89,7 +89,32 @@
     grid-template-columns: repeat(1, minmax(180px, 240px));
     gap: 1.8em;
   }
-}
+
+  h2 {
+    padding-top: 100px !important;
+  }
+
+  .project-content {
+    max-height: none !important;
+    padding: 5% !important;
+    justify-content: flex-start !important;
+  }
+
+  .project h3 {
+    margin-top: 0.2em !important;
+    margin-bottom: 0.2em !important;
+  }
+
+  .project p {
+    margin-top: 0.1em !important;
+    margin-bottom: 0.4em !important;
+  }
+
+  .project p, .project h3 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }}
 
 /* Project content styles */
 .project-content {

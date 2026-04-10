@@ -64,7 +64,7 @@ export const questprojects = new ValidateDataMap([
       title: "Sky High Super Hero Academy",
       languages: ["C#", ".NET", "Windows Forms", "File I/O"],
       description:
-        "Built for our Programming 282 module to demonstrate core OOP and file I/O principles through a practical desktop application. A Windows Forms app for managing superhero records, themed around the Sky High movie universe — with hero CRUD operations, automatic rank calculation, and a file-based databse",
+        "Built for our Programming 282 module to demonstrate core OOP and file I/O principles. A Windows Forms app for managing superhero records, themed around the Sky High movie universe, with hero CRUD operations, automatic rank calculation, and a file-based databse",
       githubLink: "https://github.com/Waldo-Blom/PRG282-Sky_High_Super_Hero_Academy",
       category: "University Projects",
     },
