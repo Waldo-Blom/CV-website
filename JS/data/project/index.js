@@ -2,6 +2,28 @@ import { ValidateDataMap } from "../validate.js";
 
 export const questprojects = new ValidateDataMap([
   [
+    8,
+    {
+      title: "RangeMaster",
+      languages: ["Next.js", "React", "TailwindCSS", "Shadcn UI", "Firestore", "Firebase Authentication"],
+      description:
+        "RangeMaster is a web-based application designed to track and analyze golfer performance during practice sessions, providing coaches with access to in-depth player statistics. The application was built using Firebase Studio, with the integrated Gemini coding assistant utilized during some parts of development.<br><br><em>*Please note that this project was contracted work, commissioned by my golf coach (Johan Stander) to implement the application's backend. As such, access is granted exclusively upon the execution of a signed Non-Disclosure Agreement (NDA), after which the project may be viewed and backend documentation made available upon request.</em>",
+      githubLink: "https://github.com/Waldo-Blom/RangeMaster",
+      category: "Personal Projects",
+    },
+  ],
+  [
+    9,
+    {
+      title: "GolfCoachPro",
+      languages: ["Next.js", "React", "TailwindCSS", "Shadcn UI", "Firestore", "Firebase Authentication"],
+      description:
+        "GolfCoachPro is a web-based, all-in-one management platform designed to help golf instructors efficiently manage student tracking, lesson scheduling, and payments from a single dashboard. The application was built using Firebase Studio, with the integrated Gemini coding assistant utilized during parts of development.<br><br><em>*Please note that this project was contracted work, commissioned by my golf coach (Johan Stander) to implement the application's backend. As such, access is granted exclusively upon the execution of a signed Non-Disclosure Agreement (NDA), after which the project may be viewed and backend documentation made available upon request.</em>",
+      githubLink: "https://github.com/Waldo-Blom/GolfCoachPro",
+      category: "Personal Projects",
+    },
+  ],
+  [
     1,
     {
       title: "CV Website",

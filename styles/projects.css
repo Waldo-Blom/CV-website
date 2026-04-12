@@ -95,9 +95,15 @@
   }
 
   .project-content {
+    min-height: auto !important;
     max-height: none !important;
     padding: 5% !important;
     justify-content: flex-start !important;
+  }
+
+  .project img {
+    height: auto;
+    max-height: none;
   }
 
   .project h3 {
@@ -162,7 +168,8 @@
   object-fit: cover;
   border-radius: 15px;
   width: 100%;
-  max-height: 200px; 
+  height: 200px;
+  display: block;
   margin-bottom: 1em;
 }
 
@@ -181,6 +188,102 @@
   margin-bottom: 0.5em;
   text-align: start;
   color: rgba(0, 0, 0, 0.778) ;
+}
+
+.project-description {
+  margin: 0;
+}
+
+.project-description-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  width: 100%;
+}
+
+.project-description-text.clamped {
+  -webkit-line-clamp: 4;
+}
+
+.read-more-link {
+  color: var(--waikawa-gray-950);
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+  display: inline;
+  margin-left: 0.25em;
+}
+
+.read-more-link:hover,
+.read-more-link:focus {
+  text-decoration: none;
+}
+
+.project-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.project-modal.hidden {
+  display: none;
+}
+
+.project-modal__panel {
+  position: relative;
+  width: min(720px, 100%);
+  max-height: min(90vh, 900px);
+  overflow: hidden;
+  border-radius: 24px;
+  background: #ffffff;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-modal__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  color: #222;
+  font-size: 1.8rem;
+  cursor: pointer;
+  line-height: 1;
+  z-index: 10;
+}
+
+.project-modal__image {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+}
+
+.project-modal__body {
+  padding: 1.75rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex: 1;
+}
+
+.project-modal__body h3 {
+  margin: 0;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--waikawa-gray-950);
+}
+
+.project-modal__description {
+  line-height: 1.65;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 /* Pills */
