@@ -39,7 +39,7 @@ export const Navbar = () => {
 
         {/* Divider */}
         <div className="mx-2 h-6 w-px bg-white/20" />
-        <div className="flex items-center justify-center px-4 md:w-[120px]">
+        <div className="flex items-center justify-center px-4 pl-0 md:w-[120px]">
           <button
             onClick={toggleTheme}
             className="flex h-8 w-8 items-center justify-center rounded-full border border-gray-600 text-gray-300 transition-all duration-200 hover:border-white hover:text-white sm:h-9 sm:w-9"
