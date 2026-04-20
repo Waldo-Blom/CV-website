@@ -16,11 +16,10 @@ export const Navbar = () => {
   const { darkMode, toggleTheme } = useTheme();
 
   return (
-    <div className="flex justify-center pt-5">
-      <nav className="font-[family-name:var(--font-navbar)] flex items-center gap-1 rounded-xl border border-white/10 bg-black/90 px-6 py-3 shadow-lg sm:px-8 md:px-15">
+    <div className="flex justify-center pt-7">
+      <nav className="font-[family-name:var(--font-navbar)] flex items-center rounded-xl border border-white/10 bg-black/90 py-3 shadow-lg">
         
-        {/* Left Section: Navigation Links */}
-        <div className="flex items-center gap-1 sm:gap-2">
+        <div className="flex items-center gap-1 pl-6 sm:pl-8 md:pl-15 sm:gap-2">
           {navItems.map(({ href, label, icon: Icon, hideOnMobile }) => {
             const isActive = pathname === href;
             return (
@@ -40,25 +39,14 @@ export const Navbar = () => {
 
         {/* Divider */}
         <div className="mx-2 h-6 w-px bg-white/20" />
-
-        {/* Right Section: Centered Theme Toggle */}
-        <div className="flex items-center justify-center min-w-[40px] sm:min-w-[48px]">
+        <div className="flex items-center justify-center px-4 md:w-[120px]">
           <button
             onClick={toggleTheme}
             className="flex h-8 w-8 items-center justify-center rounded-full border border-gray-600 text-gray-300 transition-all duration-200 hover:border-white hover:text-white sm:h-9 sm:w-9"
             aria-label="Toggle theme"
           >
-            {darkMode ? (
-              <>
-                <Moon size={14} className="sm:hidden" />
-                <Moon size={16} className="hidden sm:block" />
-              </>
-            ) : (
-              <>
-                <Sun size={14} className="sm:hidden" />
-                <Sun size={16} className="hidden sm:block" />
-              </>
-            )}
+          {darkMode ? <Sun size={14} className="sm:hidden" /> : <Moon size={14} className="sm:hidden" />}
+          {darkMode ? <Sun size={16} className="hidden sm:block" /> : <Moon size={16} className="hidden sm:block" />}
           </button>
         </div>
 
