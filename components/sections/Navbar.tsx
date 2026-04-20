@@ -19,6 +19,7 @@ export const Navbar = () => {
     <div className="flex justify-center pt-7">
       <nav className="font-[family-name:var(--font-navbar)] flex items-center rounded-xl border border-white/10 bg-black/90 py-3 shadow-lg">
         
+        {/*Navigation links*/}
         <div className="flex items-center gap-1 pl-6 sm:pl-8 md:pl-15 sm:gap-2">
           {navItems.map(({ href, label, icon: Icon, hideOnMobile }) => {
             const isActive = pathname === href;
@@ -39,6 +40,8 @@ export const Navbar = () => {
 
         {/* Divider */}
         <div className="mx-2 h-6 w-px bg-white/20" />
+
+        {/* Theme button */}
         <div className="flex items-center justify-center px-4 pl-0 md:w-[120px]">
           <button
             onClick={toggleTheme}
