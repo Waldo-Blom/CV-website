@@ -8,9 +8,14 @@
   }
   
   .scroll-arrow {
-    color: var(--foreground);
-    opacity: 0.7;
+    color: #1f2937;
+    opacity: 0.8;
     transition: opacity 0.3s ease;
+  }
+
+  .darkmode .scroll-arrow {
+    color: #ffffff;
+    opacity: 1;
   }
   
   .scroll-arrow:hover {

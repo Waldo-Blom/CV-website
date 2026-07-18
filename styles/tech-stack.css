@@ -44,6 +44,8 @@
 .bento-section h2 {
   font-size: 1.4rem;
   margin-bottom: 15px;
+  text-align: center;
+  width: 100%;
 }
 
 .tech-list {
@@ -170,6 +172,12 @@
 
   .bento-section {
     grid-column: span 1 !important;
+  }
+
+  .tech-list {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 }
 
