@@ -28,11 +28,11 @@ const disableDarkMode = () => {
 document.addEventListener('DOMContentLoaded', () => {
     darkMode = localStorage.getItem('darkMode');
     
-    if (darkMode === 'disabled') {
-        disableDarkMode();
-    } else {
-        // Default to dark mode if not set
+    if (darkMode === 'enabled') {
         enableDarkMode();
+    } else {
+        // Default to light mode if not set
+        disableDarkMode();
     }
 });
 
