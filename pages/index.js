@@ -1,4 +1,4 @@
-import { questprojects } from "../JS/data/project/index.js";
+import { projects } from "../JS/data/project/index.js";
 import { InjectionHandler } from "../JS/handlers/injection.handler.js";
 import { QuestReadyEvent } from "../index.js";
 
@@ -53,7 +53,7 @@ function initializeProjectModal() {
 
   function setModalContent(projectId, project) {
     modalTitle.textContent = project.title;
-    modalImage.src = `../images/project/${projectId}.png`;
+    modalImage.src = project.image ;
     modalImage.alt = project.title;
     modalDescription.innerHTML = project.description;
   }
@@ -124,7 +124,7 @@ document.addEventListener("click", (event) => {
 
   const card = target.closest(".project");
   const projectId = parseInt(card?.getAttribute("data-project-id"), 10);
-  const project = questprojects.get(projectId);
+  const project = projects.get(projectId);
 
   if (project && projectModalController) {
     projectModalController.openModal(projectId, project);
@@ -154,7 +154,7 @@ async function InsertCC(projects) {
         name: value.title,
         languages: formatLanguagesAsPills(value.languages), // Insert formatted pills
         shortDescription: value.description,
-        imageLink: `../images/project/${key}.png`,
+        imageLink: value.image ,
       })
       .inject();
   }
@@ -184,7 +184,7 @@ async function InsertCC(projects) {
 
 // Initialize project insertion on the custom event
 document.addEventListener(QuestReadyEvent, () => {
-  InsertCC(questprojects);
+  InsertCC(projects);
 });
 
 // Re-evaluate read-more on resize (for orientation changes, responsive design)
