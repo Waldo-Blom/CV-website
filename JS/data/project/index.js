@@ -44,7 +44,7 @@ export const projects = new ValidateDataMap([
       title: "RangeMaster",
       languages: ["Next.js", "React", "TailwindCSS", "Shadcn UI", "Firestore", "Firebase Authentication"],
       description:
-        "RangeMaster is a web-based application designed to track and analyze golfer performance during practice sessions, providing coaches with access to in-depth player statistics. The application was built using Firebase Studio, with the integrated Gemini coding assistant utilized during some parts of development.<br><br><em>*Please note that this project was contracted work, commissioned by my golf coach (Johan Stander) to implement the application's backend. As such, access is granted exclusively upon the execution of a signed Non-Disclosure Agreement (NDA), after which the project may be viewed and backend documentation made available upon request.</em>",
+        "RangeMaster is a web-based application designed to track and analyse golfer performance during practice sessions, providing coaches with access to in-depth player statistics. The application was built using Firebase Studio, with the integrated Gemini coding assistant used during certain aspects of development, primarily to accelerate frontend implementation.<br><br><em>*Please note that this project was contracted work, commissioned by my golf coach to design and implement the backend functionality required for data storage and retrieval. As such, access to the application is available exclusively upon the execution of a signed Non-Disclosure Agreement (NDA), after which the project and backend documentation can be made available upon request.</em>",
       githubLink: "",
       category: "Personal Projects",
       image: "../images/project/RangeMaster.png",
@@ -56,7 +56,7 @@ export const projects = new ValidateDataMap([
       title: "GolfCoachPro",
       languages: ["Next.js", "React", "TailwindCSS", "Shadcn UI", "Firestore", "Firebase Authentication"],
       description:
-        "GolfCoachPro is a web-based, all-in-one management platform designed to help golf instructors efficiently manage student tracking, lesson scheduling, and payments from a single dashboard. The application was built using Firebase Studio, with the integrated Gemini coding assistant utilized during parts of development.<br><br><em>*Please note that this project was contracted work, commissioned by my golf coach (Johan Stander) to implement the application's backend. As such, access is granted exclusively upon the execution of a signed Non-Disclosure Agreement (NDA), after which the project may be viewed and backend documentation made available upon request.</em>",
+        "GolfCoachPro is a web-based, all-in-one management platform designed to help golf instructors efficiently manage student tracking, lesson scheduling, and payments from a single dashboard. The application was built using Firebase Studio, with the integrated Gemini coding assistant used during certain aspects of development, primarily to accelerate frontend implementation.<br><br><em>*Please note that this project was contracted work, commissioned by my golf coach to design and implement the backend functionality required for data storage and retrieval. As such, access to the application is available exclusively upon the execution of a signed Non-Disclosure Agreement (NDA), after which the project and backend documentation can be made available upon request.</em>",
       githubLink: "",
       category: "Personal Projects",
       image: "../images/project/Golf-Coach-Pro.png",
