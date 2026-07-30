@@ -55,8 +55,8 @@
 }
 
 /* Prevent visited link colour change */
-.cta-buttons a:visited {
-    color: var(--background);
+.contact-btn:visited {
+    color: var(--foreground);
 }
 
 .download-btn {
