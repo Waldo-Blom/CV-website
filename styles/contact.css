@@ -45,6 +45,15 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.contact-form-wrapper {
+    position: relative;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form-wrapper.submit-success {
+    border: 2px solid #28a745;
+}
+
 /* Form Styling */
 .contact-form {
     display: flex;
@@ -168,9 +177,9 @@
 }
 .popup-message {
     position: absolute;
-    top: 0%;
+    bottom: 1rem;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translateX(-50%);
     padding: 0.75rem 1.5rem;
     background-color: #28a745;
     color: white;
@@ -188,10 +197,7 @@
     visibility: hidden;
     margin: 0 auto;
   }
-  
-  .popup-text {
-    white-space: nowrap; /* Keep text on one line */
-  }
+
   
   .popup-close-btn {
     background: none;
@@ -203,6 +209,36 @@
     line-height: 1;
     display: flex;
     align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    .popup-text-desktop {
+      display: none;
+    }
+
+    .popup-text-mobile {
+      display: inline;
+    }
+
+    .popup-message {
+      padding: 1rem 1.2rem 1.5rem;
+      width: min(100%, 85%);
+      max-width: 350px;
+    }
+
+    .popup-close-btn {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.75rem;
+      display: inline-flex;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.25rem;
+      padding: 0;
+      line-height: 1;
+      cursor: pointer;
+    }
   }
   
   .popup-close-btn:hover {

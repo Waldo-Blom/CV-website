@@ -1,19 +1,16 @@
-document.getElementById('contactForm').addEventListener('submit', function (event) {
+const contactForm = document.getElementById('contactForm');
+const popup = document.getElementById('popupMessage');
+const closeBtn = document.getElementById('closePopup');
+const spinner = document.getElementById('loadingSpinner');
+const formWrapper = document.querySelector('.contact-form-wrapper');
+
+contactForm.addEventListener('submit', function (event) {
   event.preventDefault();
 
   const form = event.target;
-  const popup = document.getElementById('popupMessage');
-  const closeBtn = document.getElementById('closePopup');
-  const spinner = document.getElementById('loadingSpinner');
 
-  // Show the spinner
+  formWrapper.classList.add('submit-success');
   spinner.classList.remove('hidden');
-
-  // Handle popup close button
-  closeBtn.addEventListener('click', function() {
-    popup.classList.remove('show');
-    popup.classList.add('hidden');
-  });
 
   fetch(form.action, {
     method: form.method,
@@ -21,17 +18,14 @@ document.getElementById('contactForm').addEventListener('submit', function (even
   })
     .then(response => {
       if (response.ok) {
-        // Show popup immediately
         popup.classList.remove('hidden');
         popup.classList.add('show');
 
-         // Hide the popup after 3 seconds
-         setTimeout(() => {
+        setTimeout(() => {
           popup.classList.remove('show');
           popup.classList.add('hidden');
         }, 8000);
-        
-        // Reset form
+
         form.reset();
       } else {
         alert('An error occurred. Please try again.');
@@ -42,7 +36,15 @@ document.getElementById('contactForm').addEventListener('submit', function (even
       console.error(error);
     })
     .finally(() => {
-      // Hide the spinner regardless of the outcome
       spinner.classList.add('hidden');
+      setTimeout(() => {
+        formWrapper.classList.remove('submit-success');
+      }, 3000);
     });
+});
+
+closeBtn.addEventListener('click', function() {
+  popup.classList.remove('show');
+  popup.classList.add('hidden');
+  formWrapper.classList.remove('submit-success');
 });
