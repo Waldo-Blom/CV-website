@@ -78,6 +78,25 @@ export const projects = new ValidateDataMap([
   [
     7,
     {
+      title: "SongSync – Playlist Converter",
+      languages: [
+        "Next.js",
+        "TypeScript",
+        "React",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "Node.js"
+      ],
+      description:
+        "An open-source web application currently in early development designed to export and import music playlists across Spotify, YouTube Music, and Tidal using JSON files. Created as a hands-on project to build proficiency in Next.js, TypeScript, and React.",
+      githubLink: "https://github.com/Waldo-Blom/SongSync-Playlist-Converter",
+      category: "Personal Projects",
+      image: "../images/project/SongSync.png",
+    },
+  ],
+  [
+    8,
+    {
       title: "TypeScript Essentials Course",
       languages: ["TypeScript", "JavaScript", "Node.js", "React", "Angular", "Vue"], 
       description:
@@ -89,7 +108,7 @@ export const projects = new ValidateDataMap([
     
   ],
   [
-    8,
+    9,
     {
       title: "Flappy Bird",
       languages: ["C#", "Unity"],	 
